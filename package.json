@@ -7,11 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "compile:sass": "sass --watch src/scss:src/css",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "ci:format": "prettier ./src --check",
-    "format": "prettier ./src --write"
+    "prettier": "prettier --check --ignore-unknown src/",
+    "prettier:fix": "prettier ./src --write --ignore-unknown"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
