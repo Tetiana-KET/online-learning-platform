@@ -170,7 +170,66 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
 ## Requirements
 
-- [ ]
+**
+HTML & CSS Part**
+
+- [ ] Create semantic HTML markup
+
+- [ ] Implement styles using Sass (mixins, variables, and Sass inheritance).
+
+- [ ] Apply Flexbox and/or CSS Grid layouts.
+
+- [ ] Implement a "Home" page with:
+
+  - [ ] An image slider.
+
+  - [ ] A navigation menu with a submenu (nav, ul, li, a).
+
+  - [ ] Make the menu responsive across devices.
+
+- [ ] Ensure the web application is fully responsive using media queries (no horizontal scrolling on resizing).
+
+**JavaScript Part**
+
+- [ ] Implement a "Gallery" page that:
+
+  - [ ] Displays a set of cards (300x300px) with course info from the JSON file.
+
+  - [ ] Handles image resizing or cropping.
+
+  - [ ]Add client-side pagination with a max of 10 items per page.
+
+  - [ ] Include a “Show more” button for asynchronous loading of elements.
+
+  - [ ] Implement sorting and filtering functionalities.
+
+  - [ ] Provide search functionality across the data.
+
+- [ ] Create a "Contacts" page with:
+
+  - [ ] A map service integration (Google Maps or OpenStreetMap) showing a specific location.
+
+**Project Compilation, Verification & Submission**
+Quality Control
+
+- [ ] Add ESLint for JavaScript and Stylelint for Sass/CSS.
+
+- [ ] Add a "lint" script in package.json to check both .js and .scss files.
+
+- [ ] Fix any issues detected by linters.
+
+**Verification**
+Ensure the project is fully functional.
+
+- [ ] Push all changes to the remote repository.
+
+- [ ] Double-check that your last commit is before the project deadline.
+
+**Submission**
+
+- [ ] Commit all changes to the repository.
+
+- [ ] Submit the repository link before the deadline.
 
 ## Roadmap
 
