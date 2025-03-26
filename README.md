@@ -117,15 +117,25 @@ npm run build
 
 This will transpile the TypeScript files with tsc and then build the project using vite. The build will be stored in the dist/ directory.
 
-### ESLint check
+### To check for code style and potential errors in the `src/` directory run Linting Commands:
 
-To check for code style and potential errors in the `src/` directory run
+_For JavaScript linting:_
 
 ```
 npm run lint
 ```
 
-This will run ESLint on the src/ directory to detect any issues in your code based on your ESLint configuration.
+_For CSS linting:_
+
+```
+npm run lint:css
+```
+
+_To run both linters at once:_
+
+```
+npm run lint:all
+```
 
 ### ESLint fix issues
 
@@ -170,8 +180,7 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
 ## Requirements
 
-**
-HTML & CSS Part**
+**HTML & CSS Part**
 
 - [ ] Create semantic HTML markup
 
@@ -197,7 +206,7 @@ HTML & CSS Part**
 
   - [ ] Handles image resizing or cropping.
 
-  - [ ]Add client-side pagination with a max of 10 items per page.
+  - [ ] Add client-side pagination with a max of 10 items per page.
 
   - [ ] Include a “Show more” button for asynchronous loading of elements.
 
@@ -212,9 +221,9 @@ HTML & CSS Part**
 **Project Compilation, Verification & Submission**
 Quality Control
 
-- [ ] Add ESLint for JavaScript and Stylelint for Sass/CSS.
+- [x] Add ESLint for JavaScript and Stylelint for Sass/CSS.
 
-- [ ] Add a "lint" script in package.json to check both .js and .scss files.
+- [x] Add a "lint" script in package.json to check both .js and .scss files.
 
 - [ ] Fix any issues detected by linters.
 
