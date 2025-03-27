@@ -21,21 +21,29 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   &__slider {
     max-width: 600px;
+    height: 400px;
   }
 }
 
 .slider {
+  overflow: hidden;
+
   &__items {
-    margin-bottom: 30px;
+    display: flex;
+    max-height: 100%;
   }
 
   &__item {
     position: relative;
+    flex: 1 0 100%;
+
     img {
+      height: 100%;
       object-fit: cover;
       object-position: center;
     }

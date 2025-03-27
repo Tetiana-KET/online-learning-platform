@@ -43,40 +43,10 @@
             <h2 class="favorite__title">Choose your <span>favorite</span> course</h2>
             <div class="favorite__slider-wrap">
               <div class="favorite__slider slider">
-                <ul class="slider__items">
-                  <!-- LIST OF CARDS IS DYNAMICALLY GENERATED -->
-
-                  <figure class="slider__item">
-                    <img src="src/assets/images/coding1.webp" alt="image for course" />
-                    <figcaption class="slider__item-info">
-                      <h3 class="slider__item-title">Discrete Mathematics for Computer Science</h3>
-                      <p class="slider__item-description">
-                        Dive deep into advanced algorithms and data structures. Topics include sorting, searching,
-                        trees, and graphs, aimed at providing a strong foundation for tackling complex problems.
-                      </p>
-                    </figcaption>
-                    <a href="#" class="slider__item-link"></a>
-                  </figure>
+                <ul class="slider__items" id="slider-items">
+                  <!-- LIST OF SLIDES IS DYNAMICALLY GENERATED -->
                 </ul>
-                <div class="favorite__pagination">
-                  <ul class="favorite__pagination-items">
-                    <li class="favorite__pagination-item">
-                      <div class="favorite__pagination-progress"></div>
-                    </li>
-                    <li class="favorite__pagination-item">
-                      <div class="favorite__pagination-progress"></div>
-                    </li>
-                    <li class="favorite__pagination-item">
-                      <div class="favorite__pagination-progress"></div>
-                    </li>
-                    <li class="favorite__pagination-item">
-                      <div class="favorite__pagination-progress"></div>
-                    </li>
-                    <li class="favorite__pagination-item">
-                      <div class="favorite__pagination-progress"></div>
-                    </li>
-                  </ul>
-                </div>
+
                 <div class="favorite__arrows arrow-left">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
@@ -98,6 +68,11 @@
                   </svg>
                 </div>
               </div>
+            </div>
+            <div class="favorite__pagination">
+              <ul class="favorite__pagination-items" id="favorite-pagination">
+                <!-- LIST OF pagination-items IS DYNAMICALLY GENERATED -->
+              </ul>
             </div>
           </div>
         </section>
