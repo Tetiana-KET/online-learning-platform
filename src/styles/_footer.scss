@@ -36,19 +36,22 @@
         transition: fill var.$transition;
       }
 
-      &:hover svg {
-        fill: var.$accent-color;
-      }
-
-      &:hover {
-        color: var.$accent-color;
-      }
-
       @media (max-width: 768px) {
         &.hidden-on-mobile {
           display: none;
         }
       }
     }
+  }
+}
+
+@media (hover: hover) {
+  .social__github:hover svg,
+  .social__linkedin:hover svg {
+    fill: var.$accent-color;
+  }
+
+  .social__github:hover {
+    color: var.$accent-color;
   }
 }
