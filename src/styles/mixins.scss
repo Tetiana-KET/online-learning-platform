@@ -1,0 +1,41 @@
+@use './variables.scss' as var;
+
+@mixin container {
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@mixin button-styles($bg-color) {
+  width: 90px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: $bg-color;
+  color: var.$white;
+  transition: var.$transition;
+
+  &:hover {
+    background-color: color.adjust($bg-color, $lightness: -15%);
+  }
+}
+
+@mixin border-shadow {
+  border-radius: 5px;
+  border: 1px solid var.$accent-color;
+  box-shadow: var.$box-shadow;
+}
+
+@mixin hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: var.$transition;
+}
+
+@mixin visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

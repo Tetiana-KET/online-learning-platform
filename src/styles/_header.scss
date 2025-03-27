@@ -1,0 +1,102 @@
+@use './variables.scss' as var;
+@use './mixins.scss' as mix;
+
+.header {
+  border-bottom: 1px solid var.$accent-color;
+  box-shadow: var.$box-shadow;
+
+  &__container {
+    height: 100px;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  &__logo-wrap {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
+
+.header__nav {
+  position: relative;
+
+  .nav {
+    display: flex;
+    gap: 20px;
+
+    &__courses-dropdown {
+      padding-right: 15px;
+
+      &::before {
+        content: '▼';
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: var.$transition;
+      }
+
+      &:hover .courses {
+        @include mix.visible;
+      }
+
+      &:hover::before {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  .courses {
+    @include mix.hidden;
+
+    position: absolute;
+    width: max-content;
+    max-width: 320px;
+    right: 0;
+    top: 125%;
+    background: var.$white;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: var.$box-shadow;
+    border-radius: 10px;
+  }
+}
+
+.nav__item {
+  font-weight: 600;
+  line-height: 200%;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    transform: scaleX(0);
+    width: 100%;
+    height: 2px;
+    background-color: var.$accent-color;
+    transition: var.$transition;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.courses__item {
+  padding: 10px;
+  transition: var.$transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var.$light-grey;
+  }
+}
