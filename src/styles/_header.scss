@@ -49,9 +49,11 @@
     @include mix.hidden;
 
     position: absolute;
-    z-index: 1;
+    z-index: 11;
     width: max-content;
     max-width: 320px;
+    max-height: 90vh;
+    overflow-y: auto;
     right: 0;
     top: 100%;
     background: var.$white;
