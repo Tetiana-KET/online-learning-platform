@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Introduction to HTML",
     "instructors": ["John Doe", "Jane Smith"],
     "difficulty_level": "beginner",
@@ -9,6 +10,7 @@
     "description": "Learn the basics of HTML, the standard markup language for creating web pages."
   },
   {
+    "id": 2,
     "title": "CSS Fundamentals",
     "instructors": ["Alice Brown", "Robert Green"],
     "difficulty_level": "beginner",
@@ -18,6 +20,7 @@
     "description": "Get a solid foundation in CSS to style your web pages and create responsive layouts."
   },
   {
+    "id": 3,
     "title": "JavaScript Basics",
     "instructors": ["Michael Johnson", "Sarah Williams"],
     "difficulty_level": "beginner",
@@ -27,6 +30,7 @@
     "description": "Start your JavaScript journey and learn the fundamental concepts of the language."
   },
   {
+    "id": 4,
     "title": "Advanced CSS Techniques",
     "instructors": ["James Carter", "Olivia Lee"],
     "difficulty_level": "intermediate",
@@ -36,6 +40,7 @@
     "description": "Master advanced CSS techniques for creating dynamic and responsive web pages."
   },
   {
+    "id": 5,
     "title": "React.js for Beginners",
     "instructors": ["../assets/images/coding1.webp"],
     "difficulty_level": "beginner",
@@ -45,6 +50,7 @@
     "description": "Learn the basics of React.js and how to build dynamic user interfaces."
   },
   {
+    "id": 6,
     "title": "Node.js Introduction",
     "instructors": ["Daniel Miller", "Sophia Clark"],
     "difficulty_level": "beginner",
@@ -54,6 +60,7 @@
     "description": "Understand the basics of Node.js and start building server-side applications."
   },
   {
+    "id": 7,
     "title": "Express.js for Beginners",
     "instructors": ["Liam Davis", "Charlotte Adams"],
     "difficulty_level": "beginner",
@@ -63,6 +70,7 @@
     "description": "Learn how to build RESTful APIs using the Express.js framework."
   },
   {
+    "id": 8,
     "title": "MongoDB for Beginners",
     "instructors": ["Lucas Rodriguez", "Mia Evans"],
     "difficulty_level": "beginner",
@@ -72,6 +80,7 @@
     "description": "Get started with MongoDB, a NoSQL database, and learn how to interact with it."
   },
   {
+    "id": 9,
     "title": "Advanced Node.js",
     "instructors": ["Ethan Taylor", "Amelia Thompson"],
     "difficulty_level": "intermediate",
@@ -81,6 +90,7 @@
     "description": "Take your Node.js skills to the next level with advanced concepts and best practices."
   },
   {
+    "id": 10,
     "title": "UI/UX Design Basics",
     "instructors": ["William Harris", "Zoe Scott"],
     "difficulty_level": "beginner",
@@ -90,6 +100,7 @@
     "description": "Learn the essential principles of UI/UX design and how to create user-friendly interfaces."
   },
   {
+    "id": 11,
     "title": "Figma for Designers",
     "instructors": ["Ethan Green", "Sophia Martin"],
     "difficulty_level": "intermediate",
@@ -99,6 +110,7 @@
     "description": "Master Figma and create stunning designs for web and mobile applications."
   },
   {
+    "id": 12,
     "title": "Brain Training for Developers",
     "instructors": ["Olivia Carter", "Mason Mitchell"],
     "difficulty_level": "beginner",
@@ -108,6 +120,7 @@
     "description": "Enhance your cognitive abilities with exercises designed to improve memory and focus."
   },
   {
+    "id": 13,
     "title": "Communication Skills for Developers",
     "instructors": ["Lily Lewis", "James Walker"],
     "difficulty_level": "beginner",
@@ -117,6 +130,7 @@
     "description": "Improve your communication skills and learn how to work better with teams."
   },
   {
+    "id": 14,
     "title": "English for Developers: Level 1",
     "instructors": ["Benjamin King", "Chloe Harris"],
     "difficulty_level": "beginner",
@@ -126,6 +140,7 @@
     "description": "Learn English specifically for developers, covering technical terms and workplace communication."
   },
   {
+    "id": 15,
     "title": "English for Developers: Level 2",
     "instructors": ["Aiden White", "Lily Lee"],
     "difficulty_level": "intermediate",
@@ -135,6 +150,7 @@
     "description": "Take your English to the next level with advanced vocabulary and technical writing skills."
   },
   {
+    "id": 16,
     "title": "JavaScript Advanced Concepts",
     "instructors": ["Christopher Wright", "Sophie Lewis"],
     "difficulty_level": "advanced",
@@ -144,6 +160,7 @@
     "description": "Dive deep into JavaScript with advanced concepts and techniques."
   },
   {
+    "id": 17,
     "title": "Building REST APIs with Node.js",
     "instructors": ["Grace Perez", "David Martinez"],
     "difficulty_level": "intermediate",
@@ -153,6 +170,7 @@
     "description": "Learn how to build secure and efficient REST APIs using Node.js."
   },
   {
+    "id": 18,
     "title": "UI Design for Mobile Applications",
     "instructors": ["Jack Scott", "Maya Gonzalez"],
     "difficulty_level": "intermediate",
@@ -162,6 +180,7 @@
     "description": "Design beautiful and functional user interfaces for mobile applications."
   },
   {
+    "id": 19,
     "title": "Advanced MongoDB",
     "instructors": ["Ryan Thomas", "Ella Clark"],
     "difficulty_level": "intermediate",
@@ -171,6 +190,7 @@
     "description": "Master advanced MongoDB techniques for building scalable and efficient databases."
   },
   {
+    "id": 20,
     "title": "Design Thinking",
     "instructors": ["Natalie Jackson", "Aaron Green"],
     "difficulty_level": "intermediate",
@@ -180,6 +200,7 @@
     "description": "Learn the design thinking methodology for solving complex problems with creative solutions."
   },
   {
+    "id": 21,
     "title": "Learning Git and GitHub",
     "instructors": ["Zachary Young", "Harper Turner"],
     "difficulty_level": "beginner",
@@ -189,6 +210,7 @@
     "description": "Understand how to use Git and GitHub for version control and collaboration in development."
   },
   {
+    "id": 22,
     "title": "Algorithms and Data Structures",
     "instructors": ["Eleanor Harris", "Oliver Clark"],
     "difficulty_level": "advanced",
@@ -198,6 +220,7 @@
     "description": "Strengthen your problem-solving skills by learning essential algorithms and data structures."
   },
   {
+    "id": 23,
     "title": "English for Developers: Level 3",
     "instructors": ["Avery Smith", "Isabella Lee"],
     "difficulty_level": "advanced",
@@ -207,6 +230,7 @@
     "description": "Master professional English for developers, focusing on writing, presenting, and interviews."
   },
   {
+    "id": 24,
     "title": "English for Developers",
     "instructors": ["Avery Smith", "Isabella Lee"],
     "difficulty_level": "advanced",
@@ -216,6 +240,7 @@
     "description": "Master professional English  focusing on self-presenting, and interviews."
   },
   {
+    "id": 25,
     "title": "Building Full-stack Applications with React and Node.js",
     "instructors": ["William Adams", "Zoe Fisher"],
     "difficulty_level": "advanced",
@@ -225,6 +250,7 @@
     "description": "Learn how to build full-stack applications using React for the frontend and Node.js for the backend."
   },
   {
+    "id": 26,
     "title": "Advanced UI/UX Design",
     "instructors": ["Samuel King", "Lily Evans"],
     "difficulty_level": "advanced",
@@ -234,6 +260,7 @@
     "description": "Take your UI/UX design skills to the next level with advanced design techniques and tools."
   },
   {
+    "id": 27,
     "title": "Basic Mathematics for Developers",
     "instructors": ["John Smith", "Alice Johnson"],
     "difficulty_level": "beginner",
@@ -243,6 +270,7 @@
     "description": "This course introduces the essential mathematical concepts needed for problem-solving in programming. Topics include algebra, basic geometry, and data analysis techniques."
   },
   {
+    "id": 28,
     "title": "Computer Literacy for Beginners",
     "instructors": ["Mary Lee", "Michael Brown"],
     "difficulty_level": "beginner",
@@ -252,6 +280,7 @@
     "description": "Learn how to navigate the world of computers. This course covers computer hardware basics, operating systems, and fundamental software tools to get you started."
   },
   {
+    "id": 29,
     "title": "Advanced Algorithms and Data Structures",
     "instructors": ["Robert Green", "Sandra White"],
     "difficulty_level": "advanced",
@@ -261,6 +290,7 @@
     "description": "Dive deep into advanced algorithms and data structures. Topics include sorting, searching, trees, and graphs, aimed at providing a strong foundation for tackling complex problems."
   },
   {
+    "id": 30,
     "title": "Discrete Mathematics for Computer Science",
     "instructors": ["Emily Wilson", "David Harris"],
     "difficulty_level": "intermediate",

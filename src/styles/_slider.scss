@@ -1,0 +1,148 @@
+@use './variables.scss' as var;
+@use './mixins.scss' as mix;
+
+.favorite {
+  &__container {
+    padding: 30px 0;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include mix.title;
+
+    span {
+      color: var.$accent-color;
+      font-style: italic;
+    }
+  }
+
+  &__slider-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slider {
+    max-width: 600px;
+  }
+}
+
+.slider {
+  &__items {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    position: relative;
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__item-info {
+    position: absolute;
+    right: 0;
+    left: 0px;
+    padding: 10px;
+    bottom: 15px;
+    background-color: var.$overlay-bg;
+    color: var.$white;
+    z-index: 5;
+  }
+
+  &__item-title {
+    font-size: 24px;
+  }
+
+  &__item-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+
+  &__item-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+}
+
+.favorite {
+  &__pagination-items {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+  }
+
+  &__pagination-item {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var.$medium-grey;
+    position: relative;
+  }
+
+  &__pagination-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    max-width: 100%;
+    height: 100%;
+    background: var.$dark-grey;
+    border-radius: 100px;
+    transition: var.$transition;
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 50.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid var.$dark-grey;
+    transform: translateY(-50%);
+    transition: var.$transition;
+
+    & svg {
+      transition: var.$transition;
+    }
+
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+
+  .arrow-left {
+    left: 5%;
+  }
+
+  .arrow-right {
+    right: 5%;
+  }
+
+  .arrow_disabled {
+    @include mix.btn-disabled;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .favorite__arrows:hover {
+    background-color: var.$medium-grey;
+    border-color: var.$medium-grey;
+    cursor: pointer;
+  }
+
+  .favorite__arrows:hover svg path {
+    stroke: var.$light-grey;
+  }
+}
