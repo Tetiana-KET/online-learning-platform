@@ -1,0 +1,54 @@
+@use './variables.scss' as var;
+
+.footer {
+  border-top: 1px solid var.$accent-color;
+  box-shadow: var.$box-shadow;
+  background-color: var.$light-grey;
+
+  &__container {
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__github,
+    &__linkedin {
+      display: flex;
+      align-items: center;
+      transition: var.$transition;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        text-decoration: none;
+      }
+
+      svg {
+        fill: var.$main-color;
+        transition: fill var.$transition;
+      }
+
+      &:hover svg {
+        fill: var.$accent-color;
+      }
+
+      &:hover {
+        color: var.$accent-color;
+      }
+
+      @media (max-width: 768px) {
+        &.hidden-on-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}

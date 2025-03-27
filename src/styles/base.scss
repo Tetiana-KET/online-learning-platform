@@ -1,5 +1,9 @@
 @use './mixins.scss' as mix;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +26,7 @@
   align-items: center;
 }
 
-#root {
+#app {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,6 +51,10 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+ul li a {
+  display: block;
 }
 
 .main {

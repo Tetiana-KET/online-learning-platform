@@ -4,6 +4,7 @@
 .header {
   border-bottom: 1px solid var.$accent-color;
   box-shadow: var.$box-shadow;
+  background-color: var.$light-grey;
 
   &__container {
     height: 100px;
@@ -21,34 +22,37 @@
   }
 }
 
-.header__nav {
+.nav {
   position: relative;
+  display: flex;
+  gap: 20px;
 
-  .nav {
+  &__courses-dropdown {
+    padding-right: 15px;
+    align-items: center;
     display: flex;
-    gap: 20px;
 
-    &__courses-dropdown {
-      padding-right: 15px;
+    // &::before {
+    //   content: '▼';
+    //   font-size: 10px;
+    //   position: absolute;
+    //   top: 50%;
+    //   right: 0;
+    //   transform: translateY(-50%);
+    //   pointer-events: none;
+    //   transition: var.$transition;
+    // }
 
-      &::before {
-        content: '▼';
-        font-size: 10px;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        pointer-events: none;
-        transition: var.$transition;
-      }
-
-      &:hover .courses {
-        @include mix.visible;
-      }
-
-      &:hover::before {
-        transform: translateY(-50%) rotate(180deg);
-      }
+    label {
+      width: 0;
+      height: 0;
+      margin-left: 10px;
+      transform: rotate(-0deg);
+      transition: var.$transition;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 10px solid var.$main-color;
+      cursor: pointer;
     }
   }
 
@@ -56,10 +60,11 @@
     @include mix.hidden;
 
     position: absolute;
+    z-index: 1;
     width: max-content;
     max-width: 320px;
     right: 0;
-    top: 125%;
+    top: 100%;
     background: var.$white;
     list-style: none;
     padding: 10px 0;
@@ -85,18 +90,38 @@
     background-color: var.$accent-color;
     transition: var.$transition;
   }
-
-  &:hover::after {
-    transform: scaleX(1);
-  }
 }
 
 .courses__item {
   padding: 10px;
   transition: var.$transition;
   cursor: pointer;
+}
 
-  &:hover {
+@media (hover: hover) {
+  .nav__courses-dropdown:hover .courses {
+    @include mix.visible;
+  }
+
+  .nav__courses-dropdown:hover label {
+    transform: rotate(180deg);
+  }
+
+  .nav__item:hover::after {
+    transform: scaleX(1);
+  }
+
+  .courses__item:hover {
     background-color: var.$light-grey;
+  }
+}
+
+@media (hover: none) {
+  .nav__courses-dropdown input:checked ~ .courses {
+    @include mix.visible;
+  }
+
+  .nav__courses-dropdown input:checked ~ label {
+    transform: rotate(180deg);
   }
 }
