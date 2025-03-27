@@ -1,8 +1,8 @@
+import { SliderCard } from '@components/SliderCard';
 import { SLIDER_LENGTH } from '@consts/SLIDER_LENGTH';
-import { getRandomCourses } from './getRandomCourses';
 import coursesRaw from '@data/courses.json';
 import { Course } from '@models/Course';
-import { SliderCard } from '@components/SliderCard';
+import { getRandomCourses } from '../utils/getRandomCourses';
 
 export function renderSliderCard() {
   const sliderItems = document.getElementById('slider-items');
