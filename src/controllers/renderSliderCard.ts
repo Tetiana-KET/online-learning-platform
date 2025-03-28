@@ -13,4 +13,9 @@ export function renderSliderCard() {
     const slide = SliderCard(course);
     sliderItems?.append(slide);
   });
+  const firstItem = sliderItems?.firstChild as Element;
+
+  if (firstItem) {
+    firstItem.querySelector('img')?.setAttribute('loading', 'eager');
+  }
 }
