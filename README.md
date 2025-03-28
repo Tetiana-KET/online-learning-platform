@@ -20,7 +20,7 @@ An educational platform for users to browse and access various courses. The plat
 
 ## Visuals
 
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+![alt text](image.png)
 
 ## Installation
 
@@ -182,17 +182,17 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
 **HTML & CSS Part**
 
-- [ ] Create semantic HTML markup
+- [x] Create semantic HTML markup
 
-- [ ] Implement styles using Sass (mixins, variables, and Sass inheritance).
+- [x] Implement styles using Sass (mixins, variables, and Sass inheritance).
 
-- [ ] Apply Flexbox and/or CSS Grid layouts.
+- [x] Apply Flexbox and/or CSS Grid layouts.
 
-- [ ] Implement a "Home" page with:
+- [x] Implement a "Home" page with:
 
-  - [ ] An image slider.
+  - [x] An image slider.
 
-  - [ ] A navigation menu with a submenu (nav, ul, li, a).
+  - [x] A navigation menu with a submenu (nav, ul, li, a).
 
   - [ ] Make the menu responsive across devices.
 
@@ -242,4 +242,57 @@ Ensure the project is fully functional.
 
 ## Roadmap
 
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### Slider Functionality
+
+The slider component is designed for smooth navigation through slides, featuring both manual and automatic controls, along with visual progress indicators.
+
+🎮 **Features:**
+
+1. Manual Navigation:
+
+- Next/Previous Buttons: Navigate slides using left and right arrow buttons.
+- Looping: Automatically wraps around to the first/last slide when reaching the end/start.
+
+2. Autoplay:
+
+- Slides automatically transition at set intervals (e.g., 3 seconds).
+- Autoplay restarts from the first slide after reaching the last one.
+
+3. Progress Indicator:
+
+- Each slide has an individual progress bar indicating the remaining time before the next slide.
+- Progress bars reset upon manual navigation.
+
+4. Pause on Hover:
+
+- When hovering over the slider, autoplay and progress indicators pause.
+- On mouse leave, autoplay resumes from where it left off.
+
+5. Responsive Design:
+
+- Adapts to different screen sizes, recalculating slide dimensions as needed.
+
+### Router Functionality 🌐
+
+The routing system is a custom implementation for a Single Page Application (SPA). It dynamically renders page components based on the current route without reloading the page.
+
+🎮 **Features:**
+
+1. Route Management:
+
+- Manages navigation between multiple pages: Home, Gallery, Contacts, and a Not Found page.
+- Supports anchor links for in-page navigation (e.g., /contacts#about).
+- Uses the History API to ensure back/forward browser buttons work correctly.
+
+2. Active Link Styling:
+
+- Highlights the currently active navigation link by adding a CSS class.
+
+3. Slider Instance Management:
+
+- When navigating away from the home page, the slider instance is destroyed to free resources.
+- On return to the home page, a new instance is created, ensuring proper reinitialization.
+
+4. Error Handling:
+
+- Handles unknown routes by rendering a Not Found page.
