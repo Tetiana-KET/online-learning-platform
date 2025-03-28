@@ -1,3 +1,4 @@
+import { disableCurrentLink } from '@utils/disableCurrentLink';
 import { renderContacts } from './renderContacts';
 import { renderGallery } from './renderGallery';
 import { renderHome } from './renderHome';
@@ -30,6 +31,8 @@ export const Router = {
     if (addToHistory) {
       history.pushState({ route }, '', route);
     }
+
+    disableCurrentLink(route);
 
     switch (route) {
       case '/':

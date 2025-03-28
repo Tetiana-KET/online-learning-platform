@@ -81,6 +81,10 @@
   cursor: pointer;
 }
 
+.disabled-link {
+  @include mix.btn-disabled;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .nav__courses-dropdown:hover .courses {
     @include mix.visible;
