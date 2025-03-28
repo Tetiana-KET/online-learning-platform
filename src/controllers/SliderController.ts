@@ -24,10 +24,20 @@ export class SliderController {
     this.arrowLeft = this.slider.querySelector('#arrow-left')!;
     this.arrowRight = this.slider.querySelector('#arrow-right')!;
 
-    window.addEventListener('load', () => {
-      this.width = this.slider.clientWidth;
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', this.init.bind(this));
+    } else {
       this.init();
-    });
+    }
+  }
+
+  public destroy() {
+    this.arrowRight.removeEventListener('click', this.setNextSlide);
+    this.arrowLeft.removeEventListener('click', this.setPrevSlide);
+    this.slider.removeEventListener('mouseover', this.pauseProcess);
+    this.slider.removeEventListener('mouseleave', this.resetProgress);
+    window.removeEventListener('resize', this.resetProgress);
+    clearInterval(this.progressIntervalId!);
   }
 
   private init() {
@@ -93,6 +103,7 @@ export class SliderController {
   }
 
   private progressRun(progressWidth = 0) {
+    this.width = this.slider.clientWidth;
     const activeSliderDot = document.querySelector('.pagination__item_active');
     const paginationProgress = activeSliderDot?.querySelector('.favorite__pagination-progress') as HTMLElement;
 

@@ -11,7 +11,7 @@
       <header class="header">
         <div class="header__container">
           <div class="header__logo-wrap">
-            <a href="/">
+            <a href="/" id="homeLink" data-link>
               <img
                 src="src/assets/icons/logo.png"
                 width="70"
@@ -24,16 +24,13 @@
 
           <ul class="header__nav nav">
             <li class="nav__item">
-              <a href="" class="nav__link">About Us</a>
+              <a href="/contacts#about" class="nav__link" data-link>About Us</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">Gallery</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Contacts</a>
+              <a href="/contacts" class="nav__link" id="contactsLink" data-link>Contacts</a>
             </li>
             <li class="nav__item nav__courses-dropdown">
-              <a href="#" class="nav__link">Courses</a>
+              <a href="/gallery" class="nav__link" id="galleryLink" data-link>Courses gallery</a>
               <input type="checkbox" class="dropdown-toggle" id="dropdown-toggler" hidden />
               <label for="dropdown-toggler"></label>
 
@@ -43,45 +40,7 @@
           </ul>
         </div>
       </header>
-      <main class="main">
-        <section class="favorite">
-          <div class="favorite__container">
-            <h2 class="favorite__title">Choose your <span>favorite</span> course</h2>
-            <div class="favorite__slider-wrap">
-              <div class="favorite__slider slider" id="favoriteSlider">
-                <ul class="slider__items" id="sliderTrack">
-                  <!-- LIST OF SLIDES IS DYNAMICALLY GENERATED -->
-                </ul>
-
-                <div class="favorite__arrows arrow-left" id="arrow-left">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M18.5 12H6M6 12L12 6M6 12L12 18"
-                      stroke="#403F3D"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="favorite__arrows arrow-right" id="arrow-right">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18"
-                      stroke="#403F3D"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="favorite__pagination">
-              <!-- LIST OF pagination-items IS DYNAMICALLY GENERATED -->
-              <ul class="favorite__pagination-items" id="favorite-pagination-items"></ul>
-            </div>
-          </div>
-        </section>
-      </main>
+      <main class="main" id="appContent"></main>
       <footer class="footer">
         <div class="footer__container">
           <ul class="social">
