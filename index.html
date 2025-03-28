@@ -12,7 +12,13 @@
         <div class="header__container">
           <div class="header__logo-wrap">
             <a href="/">
-              <img src="src/assets/icons/logo.png" alt="the logo for Online Learning Platform app" />
+              <img
+                src="src/assets/icons/logo.png"
+                width="70"
+                height="70"
+                loading="lazy"
+                alt="the logo for Online Learning Platform app"
+              />
             </a>
           </div>
 
@@ -42,12 +48,12 @@
           <div class="favorite__container">
             <h2 class="favorite__title">Choose your <span>favorite</span> course</h2>
             <div class="favorite__slider-wrap">
-              <div class="favorite__slider slider">
-                <ul class="slider__items" id="slider-items">
+              <div class="favorite__slider slider" id="favoriteSlider">
+                <ul class="slider__items" id="sliderTrack">
                   <!-- LIST OF SLIDES IS DYNAMICALLY GENERATED -->
                 </ul>
 
-                <div class="favorite__arrows arrow-left">
+                <div class="favorite__arrows arrow-left" id="arrow-left">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M18.5 12H6M6 12L12 6M6 12L12 18"
@@ -57,7 +63,7 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="favorite__arrows arrow-right">
+                <div class="favorite__arrows arrow-right" id="arrow-right">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18"
@@ -70,9 +76,8 @@
               </div>
             </div>
             <div class="favorite__pagination">
-              <ul class="favorite__pagination-items" id="favorite-pagination">
-                <!-- LIST OF pagination-items IS DYNAMICALLY GENERATED -->
-              </ul>
+              <!-- LIST OF pagination-items IS DYNAMICALLY GENERATED -->
+              <ul class="favorite__pagination-items" id="favorite-pagination-items"></ul>
             </div>
           </div>
         </section>

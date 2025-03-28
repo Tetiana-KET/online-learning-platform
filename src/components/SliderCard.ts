@@ -12,6 +12,7 @@ export function SliderCard(props: Course) {
   const slideImg = document.createElement('img');
   slideImg.src = photos[0];
   slideImg.alt = `The image for the course: ${title}`;
+  slideImg.loading = 'lazy';
 
   const figcaption = document.createElement('figcaption');
   figcaption.classList.add('slider__item-info');

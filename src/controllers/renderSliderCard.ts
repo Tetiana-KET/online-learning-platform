@@ -5,7 +5,7 @@ import { Course } from '@models/Course';
 import { getRandomCourses } from '../utils/getRandomCourses';
 
 export function renderSliderCard() {
-  const sliderItems = document.getElementById('slider-items');
+  const sliderItems = document.getElementById('sliderTrack');
 
   const courses: Course[] = coursesRaw as Course[];
   const slideCourses = getRandomCourses(courses, SLIDER_LENGTH);

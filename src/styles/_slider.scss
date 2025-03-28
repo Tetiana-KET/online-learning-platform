@@ -35,6 +35,8 @@
 
   &__items {
     display: flex;
+    gap: var.$slides-gap;
+    transition: var.$slider-transition;
     max-height: 100%;
   }
 
@@ -109,7 +111,6 @@
     height: 100%;
     background: var.$dark-grey;
     border-radius: 100px;
-    transition: var.$transition;
   }
 
   &__arrows {
