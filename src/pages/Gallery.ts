@@ -1,4 +1,5 @@
 import { CourseFilter } from '@components/CourseFilter';
+import { Pagination } from '@components/Pagination';
 import { SearchInput } from '@components/SearchInput';
 
 export function Gallery() {
@@ -11,7 +12,7 @@ export function Gallery() {
   galleryActions.classList.add('gallery__actions', 'actions');
 
   gallerySection.append(galleryContainer);
-  galleryContainer.append(galleryActions);
+  galleryContainer.append(galleryActions, Pagination());
   galleryActions.append(SearchInput(), CourseFilter());
 
   return gallerySection;

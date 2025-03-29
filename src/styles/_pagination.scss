@@ -1,0 +1,21 @@
+@use './mixins' as mix;
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+
+  &__button {
+    @include mix.round-buttons;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+
+    &:disabled {
+      @include mix.btn-disabled;
+    }
+  }
+}

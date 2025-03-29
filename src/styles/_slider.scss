@@ -114,17 +114,11 @@
   }
 
   &__arrows {
+    @include mix.round-buttons;
+
     position: absolute;
     top: 50.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    border: 1px solid var.$dark-grey;
     transform: translateY(-50%);
-    transition: var.$transition;
 
     & svg {
       transition: var.$transition;
@@ -149,12 +143,6 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .favorite__arrows:hover {
-    background-color: var.$medium-grey;
-    border-color: var.$medium-grey;
-    cursor: pointer;
-  }
-
   .favorite__arrows:hover svg path {
     stroke: var.$light-grey;
   }

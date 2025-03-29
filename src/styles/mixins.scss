@@ -6,18 +6,41 @@
   margin: 0 auto;
 }
 
-@mixin button-styles($bg-color) {
-  width: 90px;
-  padding: 10px 15px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: $bg-color;
-  color: var.$white;
-  transition: var.$transition;
+// @mixin button-styles($bg-color) {
+//   width: 90px;
+//   padding: 10px 15px;
+//   cursor: pointer;
+//   border: none;
+//   border-radius: 5px;
+//   background-color: $bg-color;
+//   color: var.$white;
+//   transition: var.$transition;
 
-  &:hover {
-    background-color: color.adjust($bg-color, $lightness: -15%);
+//   @media (hover: hover) and (pointer: fine) {
+//     &:hover {
+//       background-color: color.adjust($bg-color, $lightness: -15%);
+//     }
+//   }
+// }
+
+@mixin round-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 2px solid var.$dark-grey;
+  color: var.$dark-grey;
+  transition: var.$transition;
+  cursor: pointer;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var.$medium-grey;
+      border-color: var.$medium-grey;
+      color: var.$light-grey;
+    }
   }
 }
 
