@@ -75,7 +75,7 @@
   }
 }
 
-.courses__item {
+.courses-category__item {
   padding: 10px;
   transition: var.$transition;
   cursor: pointer;
@@ -98,7 +98,7 @@
     transform: scaleX(1);
   }
 
-  .courses__item:hover {
+  .courses-category__item:hover {
     background-color: var.$light-grey;
   }
 }

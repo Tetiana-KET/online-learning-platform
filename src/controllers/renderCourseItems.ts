@@ -1,11 +1,8 @@
-import { CourseItem } from '@components/CourseItem';
-import { CATEGORIES } from '@consts/CATEGORIES';
+import { createCourseItems } from './createCourseItems';
 
 export function renderCourseItems() {
-  const courseItems = document.getElementById('courses');
+  const courseItemsWrap = document.getElementById('courses');
+  const courseItems = createCourseItems('li');
 
-  [...CATEGORIES].sort().forEach((category) => {
-    const courseItem = CourseItem(category);
-    courseItems?.append(courseItem);
-  });
+  courseItemsWrap?.append(...courseItems);
 }

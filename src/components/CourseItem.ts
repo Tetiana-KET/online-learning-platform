@@ -1,6 +1,6 @@
-export function CourseItem(name: string) {
-  const courseItem = document.createElement('li');
-  courseItem.classList.add('courses__item');
+export function CourseItem(name: string, tag: string) {
+  const courseItem = document.createElement(tag);
+  courseItem.classList.add('courses-category__item');
   courseItem.textContent = `${name}`;
   return courseItem;
 }
