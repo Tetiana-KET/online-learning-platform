@@ -17,5 +17,9 @@ export function CourseFilter() {
   actionsSelectWrap.append(actionsSelect);
   actionsSelect.append(...options);
 
+  actionsSelect.addEventListener('click', () => {
+    actionsSelectWrap.classList.toggle('open');
+  });
+
   return actionsSelectWrap;
 }

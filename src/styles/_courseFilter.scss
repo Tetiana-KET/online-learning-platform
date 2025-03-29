@@ -17,6 +17,11 @@
       right: 10px;
       transform: translateY(-50%);
       pointer-events: none;
+      transition: var.$transition;
+    }
+
+    &.open::after {
+      transform: translateY(-50%) rotate(180deg);
     }
 
     select {

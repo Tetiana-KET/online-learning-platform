@@ -296,3 +296,7 @@ The routing system is a custom implementation for a Single Page Application (SPA
 4. Error Handling:
 
 - Handles unknown routes by rendering a Not Found page.
+
+## TODO:
+
+- I would make custom select using div, to customize styles, if it won't be considered non semantic.
