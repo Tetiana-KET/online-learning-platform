@@ -2,7 +2,7 @@ import { CourseFilter } from '@components/CourseFilter';
 import { Pagination } from '@components/Pagination';
 import { SearchInput } from '@components/SearchInput';
 
-export function Gallery() {
+export function Gallery(currentPage: number, totalPages: number, loadCourses: (page: number) => void) {
   const gallerySection = document.createElement('section');
   const galleryContainer = document.createElement('div');
   const galleryActions = document.createElement('div');
@@ -15,7 +15,11 @@ export function Gallery() {
   courseCardsWrap.id = 'galleryCards';
 
   gallerySection.append(galleryContainer);
-  galleryContainer.append(galleryActions, courseCardsWrap, Pagination());
+  galleryContainer.append(galleryActions, courseCardsWrap);
+
+  const paginationWrap = Pagination(currentPage, totalPages, loadCourses);
+  galleryContainer.append(paginationWrap);
+
   galleryActions.append(SearchInput(), CourseFilter());
 
   return gallerySection;

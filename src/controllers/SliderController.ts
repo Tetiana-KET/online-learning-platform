@@ -34,8 +34,8 @@ export class SliderController {
   public destroy() {
     this.arrowRight.removeEventListener('click', this.handleNextSlide);
     this.arrowLeft.removeEventListener('click', this.handlePrevSlide);
-    this.slider.removeEventListener('mouseover', this.handleMouseOver);
-    this.slider.removeEventListener('mouseleave', this.handleMouseLeave);
+    this.sliderTrack.removeEventListener('mouseover', this.handleMouseOver);
+    this.sliderTrack.removeEventListener('mouseleave', this.handleMouseLeave);
     window.removeEventListener('resize', this.handleResize);
     clearInterval(this.progressIntervalId!);
   }
@@ -43,8 +43,8 @@ export class SliderController {
   private init() {
     this.arrowRight.addEventListener('click', this.handleNextSlide);
     this.arrowLeft.addEventListener('click', this.handlePrevSlide);
-    this.slider.addEventListener('mouseover', this.handleMouseOver);
-    this.slider.addEventListener('mouseleave', this.handleMouseLeave);
+    this.sliderTrack.addEventListener('mouseover', this.handleMouseOver);
+    this.sliderTrack.addEventListener('mouseleave', this.handleMouseLeave);
     window.addEventListener('resize', this.handleResize);
 
     this.progressRun();
