@@ -71,19 +71,11 @@
   }
 
   &__item-description {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 90%;
+    @include mix.clip-description;
   }
 
   &__item-link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+    @include mix.course-link;
   }
 }
 
