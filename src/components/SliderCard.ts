@@ -1,7 +1,7 @@
 import { Course } from '@models/Course';
 
 export function SliderCard(props: Course) {
-  const { title, photos, description } = props;
+  const { title, photos, description, id } = props;
 
   const sliderItem = document.createElement('li');
   sliderItem.classList.add('slider__item');
@@ -27,7 +27,8 @@ export function SliderCard(props: Course) {
 
   const courseLink = document.createElement('a');
   courseLink.classList.add('slider__item-link');
-  courseLink.href = `#`;
+  courseLink.setAttribute('data-link', '');
+  courseLink.href = `/course/${id}`;
 
   figcaption.append(courseTitle, courseInfo);
   figure.append(slideImg, figcaption, courseLink);
