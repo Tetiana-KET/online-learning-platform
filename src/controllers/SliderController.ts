@@ -32,33 +32,45 @@ export class SliderController {
   }
 
   public destroy() {
-    this.arrowRight.removeEventListener('click', this.setNextSlide);
-    this.arrowLeft.removeEventListener('click', this.setPrevSlide);
-    this.slider.removeEventListener('mouseover', this.pauseProcess);
-    this.slider.removeEventListener('mouseleave', this.resetProgress);
-    window.removeEventListener('resize', this.resetProgress);
+    this.arrowRight.removeEventListener('click', this.handleNextSlide);
+    this.arrowLeft.removeEventListener('click', this.handlePrevSlide);
+    this.slider.removeEventListener('mouseover', this.handleMouseOver);
+    this.slider.removeEventListener('mouseleave', this.handleMouseLeave);
+    window.removeEventListener('resize', this.handleResize);
     clearInterval(this.progressIntervalId!);
   }
 
   private init() {
-    this.arrowRight.addEventListener('click', () => this.setNextSlide());
-    this.arrowLeft.addEventListener('click', () => this.setPrevSlide());
-
-    this.slider.addEventListener('mouseover', () => {
-      this.pauseProcess();
-    });
-
-    this.slider.addEventListener('mouseleave', () => {
-      this.resetProgress();
-    });
-
-    window.addEventListener('resize', () => {
-      this.width = this.slider.clientWidth;
-      this.resetProgress();
-    });
+    this.arrowRight.addEventListener('click', this.handleNextSlide);
+    this.arrowLeft.addEventListener('click', this.handlePrevSlide);
+    this.slider.addEventListener('mouseover', this.handleMouseOver);
+    this.slider.addEventListener('mouseleave', this.handleMouseLeave);
+    window.addEventListener('resize', this.handleResize);
 
     this.progressRun();
   }
+
+  private handleNextSlide = () => {
+    this.setNextSlide();
+  };
+
+  private handlePrevSlide = () => {
+    this.setPrevSlide();
+  };
+
+  private handleMouseOver = () => {
+    this.pauseProcess();
+  };
+
+  private handleMouseLeave = () => {
+    this.resetProgress();
+  };
+
+  private handleResize = () => {
+    if (!this.slider) return;
+    this.width = this.slider.clientWidth;
+    this.resetProgress();
+  };
 
   private setActiveDot(dotIndex: number = 0) {
     clearInterval(this.progressIntervalId!);
