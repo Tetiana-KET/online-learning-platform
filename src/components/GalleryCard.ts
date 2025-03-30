@@ -34,7 +34,7 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
 
   const courseLink = document.createElement('a');
   courseLink.classList.add('course-info__link');
-  courseLink.href = `course/${id}`;
+  courseLink.href = `/course/${id}`;
   courseLink.setAttribute('data-link', '');
 
   // Difficulty Level
