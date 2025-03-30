@@ -6,22 +6,23 @@
   margin: 0 auto;
 }
 
-// @mixin button-styles($bg-color) {
-//   width: 90px;
-//   padding: 10px 15px;
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 5px;
-//   background-color: $bg-color;
-//   color: var.$white;
-//   transition: var.$transition;
+@mixin button-styles($bg-color) {
+  width: 120px;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: $bg-color;
+  color: var.$white;
+  transition: var.$transition;
 
-//   @media (hover: hover) and (pointer: fine) {
-//     &:hover {
-//       background-color: color.adjust($bg-color, $lightness: -15%);
-//     }
-//   }
-// }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: adjust-color($bg-color, $lightness: -5%);
+      box-shadow: var.$box-shadow;
+    }
+  }
+}
 
 @mixin round-buttons {
   display: flex;
@@ -30,8 +31,8 @@
   width: 60px;
   height: 60px;
   border-radius: 100px;
-  border: 2px solid var.$dark-grey;
-  color: var.$dark-grey;
+  border: 2px solid var.$accent-color;
+  color: var.$accent-color;
   transition: var.$transition;
   cursor: pointer;
 

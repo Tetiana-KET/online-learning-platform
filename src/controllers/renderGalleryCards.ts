@@ -1,11 +1,14 @@
 import { Course } from '@models/Course';
 import { GalleryCard } from '@components/GalleryCard';
 
-export function renderGalleryCards(courses: Course[]) {
+export function renderGalleryCards(courses: Course[], append: boolean = false) {
   const courseCardsWrap = document.getElementById('galleryCards');
 
   if (courseCardsWrap) {
-    courseCardsWrap.innerHTML = '';
+    if (!append) {
+      courseCardsWrap.innerHTML = '';
+    }
+
     courses.forEach((course) => {
       const courseCard = GalleryCard(course);
       courseCardsWrap?.append(courseCard);

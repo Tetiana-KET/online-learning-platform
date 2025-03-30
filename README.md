@@ -200,19 +200,19 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
 **JavaScript Part**
 
-- [ ] Implement a "Gallery" page that:
+- [x] Implement a "Gallery" page that:
 
-  - [ ] Displays a set of cards (300x300px) with course info from the JSON file.
+  - [x] Displays a set of cards (300x300px) with course info from the JSON file.
 
-  - [ ] Handles image resizing or cropping.
+  - [x] Handles image resizing or cropping.
 
-  - [ ] Add client-side pagination with a max of 10 items per page.
+  - [x] Add client-side pagination with a max of 10 items per page.
 
-  - [ ] Include a “Show more” button for asynchronous loading of elements.
+  - [x] Include a “Show more” button for asynchronous loading of elements.
 
   - [ ] Implement sorting and filtering functionalities.
 
-  - [ ] Provide search functionality across the data.
+  - [x] Provide search functionality across the data.
 
 - [ ] Create a "Contacts" page with:
 

@@ -9,6 +9,11 @@
     padding: 25px 0;
     flex-direction: column;
     flex: 1;
+
+    .show-more-btn {
+      @include mix.button-styles(var.$accent-color);
+      margin-bottom: 10px;
+    }
   }
 
   &__cards {

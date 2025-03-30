@@ -109,6 +109,8 @@ export class SliderController {
   }
 
   private moveSlider() {
+    this.width = this.slider.clientWidth;
+
     const slideWidth = this.width + SLIDES_GAP;
     this.translateX = -this.position * slideWidth;
     this.sliderTrack.style.transform = `translateX(${this.translateX}px)`;

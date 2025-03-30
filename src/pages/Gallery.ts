@@ -2,7 +2,12 @@ import { CourseFilter } from '@components/CourseFilter';
 import { Pagination } from '@components/Pagination';
 import { SearchInput } from '@components/SearchInput';
 
-export function Gallery(currentPage: number, totalPages: number, loadCourses: (page: number) => void) {
+export function Gallery(
+  currentPage: number,
+  totalPages: number,
+  loadCourses: (page: number, append: boolean) => void,
+  onSearch: (query: string) => void,
+) {
   const gallerySection = document.createElement('section');
   const galleryContainer = document.createElement('div');
   const galleryActions = document.createElement('div');
@@ -16,11 +21,23 @@ export function Gallery(currentPage: number, totalPages: number, loadCourses: (p
 
   gallerySection.append(galleryContainer);
   galleryContainer.append(galleryActions, courseCardsWrap);
+  galleryActions.append(SearchInput(onSearch), CourseFilter());
 
   const paginationWrap = Pagination(currentPage, totalPages, loadCourses);
-  galleryContainer.append(paginationWrap);
 
-  galleryActions.append(SearchInput(), CourseFilter());
+  const showMoreButton = document.createElement('button');
+  showMoreButton.id = 'showMoreButton';
+  showMoreButton.textContent = 'Show More';
+  showMoreButton.classList.add('show-more-btn');
+  showMoreButton.addEventListener('click', () => {
+    currentPage++;
+    loadCourses(currentPage, true);
+  });
+
+  if (currentPage >= totalPages) showMoreButton.style.display = 'none';
+
+  galleryContainer.append();
+  galleryContainer.append(showMoreButton, paginationWrap);
 
   return gallerySection;
 }

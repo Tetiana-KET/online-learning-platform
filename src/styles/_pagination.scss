@@ -17,5 +17,13 @@
     &:disabled {
       @include mix.btn-disabled;
     }
+
+    &.pagination__counter {
+      pointer-events: none;
+    }
   }
+}
+
+.pagination.disabled {
+  @include mix.btn-disabled;
 }
