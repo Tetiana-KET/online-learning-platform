@@ -210,7 +210,7 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
   - [x] Include a “Show more” button for asynchronous loading of elements.
 
-  - [ ] Implement sorting and filtering functionalities.
+  - [x] Implement sorting and filtering functionalities.
 
   - [x] Provide search functionality across the data.
 
@@ -297,6 +297,25 @@ The routing system is a custom implementation for a Single Page Application (SPA
 
 - Handles unknown routes by rendering a Not Found page.
 
+### Sorting and Filtering Functionalities
+
+This project includes sorting and filtering capabilities for the displayed items.
+
+**Filtering:**
+
+The filtering functionality allows users to filter items by category. A dropdown menu is provided for selecting a specific category. Upon selecting a category, only the items that belong to that category will be displayed. If no category is selected, all items are shown.
+
+**Sorting:**
+
+The items can be sorted by three fields: Title; Category; Difficulty Level;
+
+Currently, the sorting is applied in one direction (ascending), but the functionality for sorting in both ascending and descending order will be added in the future.
+
+**Sorting Filtered Items:**
+
+Once the user applies a category filter, they can still sort the filtered items. This allows users to filter the items by category and then sort those results based on the selected field (title, category, or difficulty level).
+
 ## TODO:
 
 - I would make custom select using div, to customize styles, if it won't be considered non semantic.
+- Add the ability to toggle sorting between ascending and descending order.

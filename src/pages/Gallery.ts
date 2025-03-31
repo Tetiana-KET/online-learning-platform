@@ -1,4 +1,5 @@
 import { CourseFilter } from '@components/CourseFilter';
+import { CourseSorter } from '@components/CourseSorter';
 import { Pagination } from '@components/Pagination';
 import { SearchInput } from '@components/SearchInput';
 
@@ -21,7 +22,7 @@ export function Gallery(
 
   gallerySection.append(galleryContainer);
   galleryContainer.append(galleryActions, courseCardsWrap);
-  galleryActions.append(SearchInput(onSearch), CourseFilter());
+  galleryActions.append(SearchInput(onSearch), CourseFilter(), CourseSorter());
 
   const paginationWrap = Pagination(currentPage, totalPages, loadCourses);
 

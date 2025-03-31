@@ -1,5 +1,6 @@
 import { createCourseItems } from '@controllers/createCourseItems';
 import { handleCategoryChange } from '@controllers/renderGallery';
+import { toggleSelectOpen } from '@controllers/toggleSelectOpen';
 
 export function CourseFilter() {
   const options = createCourseItems('option');
@@ -15,13 +16,11 @@ export function CourseFilter() {
 
   options.find((option) => (option as HTMLOptionElement).value === 'select category')?.setAttribute('selected', '');
 
-  actionsSelect.addEventListener('click', () => {
-    actionsSelectWrap.classList.toggle('open');
-  });
-
   actionsSelect.addEventListener('change', (e) => {
     const selectedCategory = (e.target as HTMLSelectElement).value;
     handleCategoryChange(selectedCategory);
   });
+
+  toggleSelectOpen(actionsSelect);
   return actionsSelectWrap;
 }

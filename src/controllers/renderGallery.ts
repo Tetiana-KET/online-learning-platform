@@ -6,22 +6,23 @@ import { Course } from '@models/Course';
 import { getPaginatedCourses } from '@utils/getPaginatedCourses';
 import { updatePagination } from '@utils/updatePagination';
 import { NotFound } from '@pages/NotFound';
+import { sortBy } from '@utils/sortBy';
+import { SortByType } from '@models/SortByType';
 
 let currentPage = 1;
 let totalPages = 1;
-const courses: Course[] = (coursesRaw as Course[]).sort((a, b) =>
-  a.title.toLowerCase().localeCompare(b.title.toLowerCase()),
-);
-let filteredCourses: Course[] = [...courses];
+const courses: Course[] = coursesRaw as Course[];
+let sortedCourses: Course[] = sortBy([...courses]);
+let filteredCourses: Course[] = [...sortedCourses];
 
 export function renderGallery() {
   appendNodeToRoot(Gallery(currentPage, totalPages, loadCourses, handleSearch));
-  renderGalleryCards(courses);
+  renderGalleryCards(filteredCourses);
 }
 
-export function loadCourses(page: number = 1, append: boolean, filteredCourses: Course[] = courses) {
+export function loadCourses(page: number = 1, append: boolean, courses: Course[] = filteredCourses) {
   currentPage = page;
-  const { coursesOnPage, totalPages: newTotalPages } = getPaginatedCourses(page, filteredCourses);
+  const { coursesOnPage, totalPages: newTotalPages } = getPaginatedCourses(page, courses);
   totalPages = newTotalPages;
 
   if (append) {
@@ -59,13 +60,15 @@ function handleSearch(query: string) {
 }
 
 export function handleCategoryChange(selectedCategory: string) {
-  let filteredCourses;
-
   if (selectedCategory === 'select category') {
     filteredCourses = [...courses];
   } else {
     filteredCourses = [...courses].filter((course) => course.category.toLocaleLowerCase() === selectedCategory);
   }
+  loadCourses(1, false, filteredCourses);
+}
 
+export function handleSortChange(field: SortByType) {
+  filteredCourses = sortBy(filteredCourses, field);
   loadCourses(1, false, filteredCourses);
 }

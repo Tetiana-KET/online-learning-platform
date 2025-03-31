@@ -2,7 +2,8 @@
 @use './mixins.scss' as mix;
 
 .actions {
-  &__select-wrap {
+  &__select-wrap,
+  &__sort-wrap {
     position: relative;
 
     @media (max-width: 600px) {
