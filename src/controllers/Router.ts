@@ -1,6 +1,6 @@
 import { disableCurrentLink } from '@utils/disableCurrentLink';
 import { renderContacts } from './renderContacts';
-import { loadCourses } from './renderGallery';
+import { renderGallery } from './renderGallery';
 import { renderHome } from './renderHome';
 import { renderNotFound } from './renderNotFound';
 import { SliderController } from './SliderController';
@@ -49,7 +49,7 @@ export const Router = {
         renderHome();
         break;
       case route === '/gallery':
-        loadCourses();
+        renderGallery();
         break;
       case route === '/contacts':
       case route === '/contacts#about':

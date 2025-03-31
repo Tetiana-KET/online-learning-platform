@@ -5,11 +5,19 @@ import coursesRaw from '@data/courses.json';
 import { Course } from '@models/Course';
 import { getPaginatedCourses } from '@utils/getPaginatedCourses';
 import { updatePagination } from '@utils/updatePagination';
+import { NotFound } from '@pages/NotFound';
 
 let currentPage = 1;
 let totalPages = 1;
-const courses: Course[] = coursesRaw as Course[];
+const courses: Course[] = (coursesRaw as Course[]).sort((a, b) =>
+  a.title.toLowerCase().localeCompare(b.title.toLowerCase()),
+);
 let filteredCourses: Course[] = [...courses];
+
+export function renderGallery() {
+  appendNodeToRoot(Gallery(currentPage, totalPages, loadCourses, handleSearch));
+  renderGalleryCards(courses);
+}
 
 export function loadCourses(page: number = 1, append: boolean, filteredCourses: Course[] = courses) {
   currentPage = page;
@@ -19,7 +27,7 @@ export function loadCourses(page: number = 1, append: boolean, filteredCourses: 
   if (append) {
     renderGalleryCards(coursesOnPage, true);
   } else {
-    renderGallery(coursesOnPage, currentPage, totalPages);
+    renderGalleryCards(coursesOnPage, false);
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -44,10 +52,7 @@ function handleSearch(query: string) {
 
   if (!filteredCourses.length) {
     document.getElementById('pagination')?.classList.add('disabled');
-    document.getElementById('galleryCards')!.innerHTML = `<div class="notFound">
-    <p>Nothing Found!</p>
-    <p>More user friendly UI will be here soon...!</p>
-    </div>`;
+    document.getElementById('galleryCards')!.innerHTML = NotFound();
   } else {
     loadCourses(1, false, filteredCourses);
   }
@@ -55,27 +60,12 @@ function handleSearch(query: string) {
 
 export function handleCategoryChange(selectedCategory: string) {
   let filteredCourses;
-  console.log(selectedCategory);
+
   if (selectedCategory === 'select category') {
     filteredCourses = [...courses];
   } else {
-    const options = document.querySelectorAll('#actionsSelect option');
-
-    options.forEach((option) => {
-      option.removeAttribute('selected');
-    });
-
-    Array.from(options)
-      .find((option) => (option as HTMLOptionElement).value === selectedCategory)
-      ?.setAttribute('selected', '');
-
     filteredCourses = [...courses].filter((course) => course.category.toLocaleLowerCase() === selectedCategory);
   }
 
   loadCourses(1, false, filteredCourses);
-}
-
-export function renderGallery(courses: Course[], currentPage: number, totalPages: number) {
-  appendNodeToRoot(Gallery(currentPage, totalPages, loadCourses, handleSearch));
-  renderGalleryCards(courses);
 }
