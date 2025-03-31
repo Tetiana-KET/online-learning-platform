@@ -59,8 +59,13 @@
 .course-info {
   padding: 15px 10px 10px;
 
-  &__difficulty span {
+  &__difficulty,
+  &__category {
     font-weight: 500;
+    span {
+      margin-right: 5px;
+      font-weight: 700;
+    }
   }
 }
 

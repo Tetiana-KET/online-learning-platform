@@ -37,6 +37,11 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
   courseLink.href = `/course/${id}`;
   courseLink.setAttribute('data-link', '');
 
+  // Category
+  const courseCategory = document.createElement('p');
+  courseCategory.classList.add('course-info__category');
+  courseCategory.innerHTML = `<span>Category:</span> ${category}`;
+
   // Difficulty Level
   const difficulty = document.createElement('p');
 
@@ -45,7 +50,7 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
 
   galleryCard.append(figure, courseLink);
   figure.append(figcaption);
-  figcaption.append(courseTitle, courseInfo, difficulty);
+  figcaption.append(courseTitle, courseInfo, difficulty, courseCategory);
 
   // Conditional Details
   if (isDetailsOpen) {
@@ -68,11 +73,6 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
       topicItem.textContent = topic;
       topicsList.append(topicItem);
     });
-
-    // Category
-    const courseCategory = document.createElement('p');
-    courseCategory.classList.add('course-info__category');
-    courseCategory.textContent = `Category: ${category}`;
 
     figcaption.append(instructorsList, difficulty, topicsList, courseCategory);
   }
