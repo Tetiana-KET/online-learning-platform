@@ -27,6 +27,10 @@
   &__slider {
     max-width: 600px;
     height: 400px;
+
+    @media screen and (max-width: 500px) {
+      height: 250px;
+    }
   }
 }
 

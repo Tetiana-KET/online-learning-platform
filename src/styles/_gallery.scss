@@ -6,6 +6,8 @@
   flex: 1;
 
   &__container {
+    max-width: 100%;
+
     padding: 25px 0;
     flex-direction: column;
     flex: 1;
@@ -17,6 +19,7 @@
   }
 
   &__cards {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;

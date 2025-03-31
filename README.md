@@ -214,9 +214,9 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
   - [x] Provide search functionality across the data.
 
-- [ ] Create a "Contacts" page with:
+- [x] Create a "Contacts" page with:
 
-  - [ ] A map service integration (Google Maps or OpenStreetMap) showing a specific location.
+  - [x] A map service integration (Google Maps or OpenStreetMap) showing a specific location.
 
 **Project Compilation, Verification & Submission**
 Quality Control
@@ -319,3 +319,4 @@ Once the user applies a category filter, they can still sort the filtered items.
 
 - I would make custom select using div, to customize styles, if it won't be considered non semantic.
 - Add the ability to toggle sorting between ascending and descending order.
+- Add possibility to change slides on progress bat click for mobile devices.
