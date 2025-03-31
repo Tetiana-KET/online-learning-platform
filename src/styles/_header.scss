@@ -72,7 +72,7 @@
     border-radius: 10px;
   }
 
-  @media (max-width: 500px) {
+  @media (width <= 500px) {
     display: none;
   }
 }
@@ -127,7 +127,8 @@
 
 .header__burger {
   display: none;
-  @media (max-width: 500px) {
+
+  @media (width <= 500px) {
     & {
       padding: 0;
       display: block;

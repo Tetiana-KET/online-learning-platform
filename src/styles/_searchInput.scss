@@ -10,22 +10,21 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     flex-direction: column;
   }
 
   & form {
     height: 50px;
     padding: 10px;
-    @include mix.border-shadow;
-  }
 
-  & form {
+    @include mix.border-shadow;
+
     position: relative;
     flex: 1;
     overflow: hidden;
 
-    @media (max-width: 600px) {
+    @media (width <= 600px) {
       width: 100%;
     }
 
@@ -47,6 +46,7 @@
     }
   }
 }
+
 @media (hover: hover) and (pointer: fine) {
   .search__button:hover svg {
     fill: var.$accent-color;

@@ -28,62 +28,11 @@
     max-width: 600px;
     height: 400px;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (width <= 500px) {
       height: 250px;
     }
   }
-}
 
-.slider {
-  overflow: hidden;
-
-  &__items {
-    display: flex;
-    gap: var.$slides-gap;
-    transition: var.$slider-transition;
-    max-height: 100%;
-  }
-
-  &__item {
-    position: relative;
-    flex: 1 0 100%;
-
-    figure {
-      height: 100%;
-    }
-
-    img {
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-
-  &__item-info {
-    position: absolute;
-    right: 0;
-    left: 0px;
-    padding: 10px;
-    bottom: 15px;
-    background-color: var.$overlay-bg;
-    color: var.$white;
-    z-index: 5;
-  }
-
-  &__item-title {
-    font-size: 24px;
-  }
-
-  &__item-description {
-    @include mix.clip-description;
-  }
-
-  &__item-link {
-    @include mix.course-link;
-  }
-}
-
-.favorite {
   &__pagination-items {
     display: flex;
     justify-content: center;
@@ -120,7 +69,7 @@
       transition: var.$transition;
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (width <= 850px) {
       display: none;
     }
   }
@@ -135,6 +84,55 @@
 
   .arrow_disabled {
     @include mix.btn-disabled;
+  }
+}
+
+.slider {
+  overflow: hidden;
+
+  &__items {
+    display: flex;
+    gap: var.$slides-gap;
+    transition: var.$slider-transition;
+    max-height: 100%;
+  }
+
+  &__item {
+    position: relative;
+    flex: 1 0 100%;
+
+    figure {
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__item-info {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    bottom: 15px;
+    background-color: var.$overlay-bg;
+    color: var.$white;
+    z-index: 5;
+  }
+
+  &__item-title {
+    font-size: 24px;
+  }
+
+  &__item-description {
+    @include mix.clip-description;
+  }
+
+  &__item-link {
+    @include mix.course-link;
   }
 }
 

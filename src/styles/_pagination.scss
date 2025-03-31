@@ -9,6 +9,7 @@
 
   &__button {
     @include mix.round-buttons;
+
     font-size: 18px;
     font-weight: bold;
     width: 40px;

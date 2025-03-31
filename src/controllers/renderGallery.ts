@@ -12,7 +12,7 @@ import { SortByType } from '@models/SortByType';
 let currentPage = 1;
 let totalPages = 1;
 const courses: Course[] = coursesRaw as Course[];
-let sortedCourses: Course[] = sortBy([...courses]);
+const sortedCourses: Course[] = sortBy([...courses]);
 let filteredCourses: Course[] = [...sortedCourses];
 
 export function renderGallery() {

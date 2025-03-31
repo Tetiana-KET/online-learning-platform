@@ -13,13 +13,6 @@
     overflow: hidden;
   }
 
-  .social__github.hidden-on-mobile a {
-    position: relative;
-    &::after {
-      @include mix.after-underline;
-    }
-  }
-
   .social {
     display: flex;
     align-items: center;
@@ -44,11 +37,19 @@
         transition: fill var.$transition;
       }
 
-      @media (max-width: 768px) {
+      @media (width <= 768px) {
         &.hidden-on-mobile {
           display: none;
         }
       }
+    }
+  }
+
+  .social__github.hidden-on-mobile a {
+    position: relative;
+
+    &::after {
+      @include mix.after-underline;
     }
   }
 }
