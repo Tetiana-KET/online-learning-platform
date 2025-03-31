@@ -194,9 +194,9 @@ This will run Prettier and format all unformatted files in the src/ directory. I
 
   - [x] A navigation menu with a submenu (nav, ul, li, a).
 
-  - [ ] Make the menu responsive across devices.
+  - [x] Make the menu responsive across devices.
 
-- [ ] Ensure the web application is fully responsive using media queries (no horizontal scrolling on resizing).
+- [x] Ensure the web application is fully responsive using media queries (no horizontal scrolling on resizing).
 
 **JavaScript Part**
 
@@ -225,7 +225,7 @@ Quality Control
 
 - [x] Add a "lint" script in package.json to check both .js and .scss files.
 
-- [ ] Fix any issues detected by linters.
+- [x] Fix any issues detected by linters.
 
 **Verification**
 Ensure the project is fully functional.

@@ -31,5 +31,6 @@ module.exports = {
     ],
     'max-classes-per-file': ['warn', 1],
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-unused-expressions': 'off',
   },
 };
