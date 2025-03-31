@@ -1,0 +1,104 @@
+@use './mixins.scss' as mix;
+@use './variables.scss' as var;
+
+.page-wrap {
+  padding: 50px 0;
+
+  & span {
+    color: var.$accent-color;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+.contacts {
+  margin-bottom: 50px;
+  &__container {
+    flex-direction: column;
+  }
+
+  &__title {
+    @include mix.title;
+  }
+
+  &__info-wrap {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__map {
+    box-shadow: var.$box-shadow;
+  }
+}
+
+.info {
+  &__title {
+    font-size: 24px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    & a {
+      font-weight: 400;
+    }
+  }
+}
+
+.about {
+  &__container {
+    flex-direction: column;
+  }
+
+  &__title {
+    @include mix.title;
+  }
+
+  &__content {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__description {
+    margin-bottom: 31px;
+  }
+
+  &__description,
+  &__progress {
+    padding: 20px;
+    border-radius: 15px;
+    background: var.$light-grey;
+  }
+
+  &__description-title {
+    margin-bottom: 20px;
+  }
+
+  &__description-text p:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  &__progress-wrap {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__progress {
+    flex: 1;
+  }
+
+  &__text,
+  &__img-wrap {
+    flex: 1 1 45%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &__img-wrap img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

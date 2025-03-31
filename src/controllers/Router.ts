@@ -5,6 +5,7 @@ import { renderHome } from './renderHome';
 import { renderNotFound } from './renderNotFound';
 import { SliderController } from './SliderController';
 import { renderCourseDetails } from './renderCourseDetails';
+import { scrollToSection } from '@utils/scrollToSection';
 
 export const Router = {
   currentSlider: null as SliderController | null,
@@ -54,6 +55,7 @@ export const Router = {
       case route === '/contacts':
       case route === '/contacts#about':
         renderContacts();
+        scrollToSection(route);
         break;
       case route.startsWith('/course/'):
         const courseId = route.split('/')[2];
