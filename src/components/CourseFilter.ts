@@ -1,4 +1,5 @@
 import { createCourseItems } from '@controllers/createCourseItems';
+import { handleCategoryChange } from '@controllers/renderGallery';
 
 export function CourseFilter() {
   const options = createCourseItems('option');
@@ -6,20 +7,21 @@ export function CourseFilter() {
   const actionsSelectWrap = document.createElement('div');
   const actionsSelect = document.createElement('select');
   actionsSelect.id = 'actionsSelect';
-
-  const defaultOption = document.createElement('option');
-  defaultOption.classList.add('courses-category__item');
-  defaultOption.id = 'defaultOption';
-  defaultOption.textContent = 'Select Category';
-  actionsSelect.append(defaultOption);
+  actionsSelect.textContent = 'Select Category';
 
   actionsSelectWrap.classList.add('actions__select-wrap');
   actionsSelectWrap.append(actionsSelect);
   actionsSelect.append(...options);
 
+  options.find((option) => (option as HTMLOptionElement).value === 'select category')?.setAttribute('selected', '');
+
   actionsSelect.addEventListener('click', () => {
     actionsSelectWrap.classList.toggle('open');
   });
 
+  actionsSelect.addEventListener('change', (e) => {
+    const selectedCategory = (e.target as HTMLSelectElement).value;
+    handleCategoryChange(selectedCategory);
+  });
   return actionsSelectWrap;
 }

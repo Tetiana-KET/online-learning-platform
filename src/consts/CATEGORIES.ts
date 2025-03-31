@@ -1,4 +1,5 @@
 export const CATEGORIES = [
+  'Select Category',
   'Computer Literacy',
   'Computer Science',
   'Frontend development',

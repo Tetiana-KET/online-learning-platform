@@ -20,6 +20,10 @@
     align-items: center;
     flex-shrink: 0;
   }
+
+  .courses-category__item[value='select category'] {
+    display: none;
+  }
 }
 
 .nav {
