@@ -11,11 +11,12 @@ export const Router = {
   currentSlider: null as SliderController | null,
 
   init: () => {
-    Router.navigate('/');
+    const currentRoute = window.location.pathname;
+    Router.navigate(currentRoute, false);
     Router.bindLinks();
 
     window.addEventListener('popstate', (e) => {
-      Router.navigate(e.state.route, false);
+      Router.navigate(e.state.route || '/', false);
     });
   },
 
