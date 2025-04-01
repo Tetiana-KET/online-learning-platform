@@ -5,7 +5,7 @@ export function renderGalleryCards(courses: Course[], append: boolean = false) {
   const courseCardsWrap = document.getElementById('galleryCards');
 
   if (courseCardsWrap) {
-    if (!append) {
+    if (!append && courses.length) {
       courseCardsWrap.innerHTML = '';
     }
 

@@ -6,6 +6,7 @@ export function CourseFilter() {
   const options = createCourseItems('option');
 
   const actionsSelectWrap = document.createElement('div');
+  actionsSelectWrap.id = 'actionsSelectWrap';
   const actionsSelect = document.createElement('select');
   actionsSelect.id = 'actionsSelect';
   actionsSelect.textContent = 'Select Category';

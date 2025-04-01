@@ -40,10 +40,16 @@ export function loadCourses(page: number = 1, append: boolean, courses: Course[]
     showMoreButton.style.display = currentPage >= totalPages ? 'none' : 'block';
   }
 
-  updatePagination(currentPage, totalPages, loadCourses);
+  if (coursesOnPage.length) {
+    updatePagination(currentPage, totalPages, loadCourses);
+  }
 }
 
 function handleSearch(query: string) {
+  const actionsSelectWrap = document.getElementById('actionsSelectWrap');
+  const sortWrap = document.getElementById('sortWrap');
+  const showMoreButton = document.getElementById('showMoreButton');
+
   filteredCourses = query
     ? courses.filter(
         ({ title, description }) =>
@@ -54,8 +60,18 @@ function handleSearch(query: string) {
   if (!filteredCourses.length) {
     document.getElementById('pagination')?.classList.add('disabled');
     document.getElementById('galleryCards')!.innerHTML = NotFound();
+    actionsSelectWrap?.classList.add('disabled');
+    sortWrap?.classList.add('disabled');
+    if (showMoreButton) {
+      showMoreButton.style.display = 'none';
+    }
   } else {
+    actionsSelectWrap?.classList.remove('disabled');
+    sortWrap?.classList.remove('disabled');
     loadCourses(1, false, filteredCourses);
+    if (showMoreButton) {
+      showMoreButton.style.display = 'block';
+    }
   }
 }
 
