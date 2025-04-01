@@ -50,7 +50,7 @@ export const Router = {
       case route === '/':
         renderHome();
         break;
-      case route === '/gallery':
+      case route === '/gallery' || route.startsWith('/gallery/'):
         renderGallery();
         break;
       case route === '/contacts':

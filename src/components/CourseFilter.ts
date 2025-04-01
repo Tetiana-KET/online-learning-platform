@@ -9,7 +9,6 @@ export function CourseFilter() {
   actionsSelectWrap.id = 'actionsSelectWrap';
   const actionsSelect = document.createElement('select');
   actionsSelect.id = 'actionsSelect';
-  actionsSelect.textContent = 'Select Category';
 
   actionsSelectWrap.classList.add('actions__select-wrap');
   actionsSelectWrap.append(actionsSelect);
@@ -20,6 +19,8 @@ export function CourseFilter() {
   actionsSelect.addEventListener('change', (e) => {
     const selectedCategory = (e.target as HTMLSelectElement).value;
     handleCategoryChange(selectedCategory);
+    const newUrl = `/gallery/${selectedCategory.replace(/\s+/g, '-')}`;
+    history.pushState({ route: newUrl }, '', newUrl);
   });
 
   toggleSelectOpen(actionsSelect);

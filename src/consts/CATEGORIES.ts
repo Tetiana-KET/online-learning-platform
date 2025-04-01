@@ -4,7 +4,7 @@ export const CATEGORIES = [
   'Computer Science',
   'Frontend development',
   'Backend development',
-  'UI/UX design',
+  'Web design',
   'Brain Training',
   'English for developers',
   'Mathematics',

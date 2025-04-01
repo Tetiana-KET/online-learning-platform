@@ -5,7 +5,7 @@
     "instructors": ["John Doe", "Jane Smith"],
     "difficultyLevel": "beginner",
     "topics": ["HTML Basics", "Tags", "Attributes", "Forms"],
-    "photos": ["src/assets/images/teaching3.webp"],
+    "photos": ["/src/assets/images/teaching3.webp"],
     "category": "Frontend development",
     "description": "Learn the basics of HTML, the standard markup language for creating web pages."
   },
@@ -15,7 +15,7 @@
     "instructors": ["Alice Brown", "Robert Green"],
     "difficultyLevel": "beginner",
     "topics": ["CSS Selectors", "Box Model", "Layout", "Flexbox", "Grid"],
-    "photos": ["src/assets/images/teaching2.webp"],
+    "photos": ["/src/assets/images/teaching2.webp"],
     "category": "Frontend development",
     "description": "Get a solid foundation in CSS to style your web pages and create responsive layouts."
   },
@@ -25,7 +25,7 @@
     "instructors": ["Michael Johnson", "Sarah Williams"],
     "difficultyLevel": "beginner",
     "topics": ["Variables", "Loops", "Functions", "Objects", "Arrays"],
-    "photos": ["src/assets/images/teaching1.webp"],
+    "photos": ["/src/assets/images/javascript.webp"],
     "category": "Frontend development",
     "description": "Start your JavaScript journey and learn the fundamental concepts of the language."
   },
@@ -35,7 +35,7 @@
     "instructors": ["James Carter", "Olivia Lee"],
     "difficultyLevel": "intermediate",
     "topics": ["CSS Animations", "Transitions", "Media Queries", "Custom Properties"],
-    "photos": ["src/assets/images/learn-to-code.webp"],
+    "photos": ["/src/assets/images/learn-to-code.webp"],
     "category": "Frontend development",
     "description": "Master advanced CSS techniques for creating dynamic and responsive web pages."
   },
@@ -45,7 +45,7 @@
     "instructors": ["Sophia Clark"],
     "difficultyLevel": "beginner",
     "topics": ["React Basics", "Components", "State Management", "Props"],
-    "photos": ["src/assets/images/teaching1.webp"],
+    "photos": ["/src/assets/images/teaching1.webp"],
     "category": "Frontend development",
     "description": "Learn the basics of React.js and how to build dynamic user interfaces."
   },
@@ -55,7 +55,7 @@
     "instructors": ["Daniel Miller", "Sophia Clark"],
     "difficultyLevel": "beginner",
     "topics": ["Node.js Overview", "Event Loop", "Modules", "File System"],
-    "photos": ["src/assets/images/slider4.webp"],
+    "photos": ["/src/assets/images/slider4.webp"],
     "category": "Backend development",
     "description": "Understand the basics of Node.js and start building server-side applications."
   },
@@ -65,7 +65,7 @@
     "instructors": ["Liam Davis", "Charlotte Adams"],
     "difficultyLevel": "beginner",
     "topics": ["Express.js Basics", "Routing", "Middleware", "RESTful APIs"],
-    "photos": ["src/assets/images/slider3.webp"],
+    "photos": ["/src/assets/images/express.webp"],
     "category": "Backend development",
     "description": "Learn how to build RESTful APIs using the Express.js framework."
   },
@@ -75,7 +75,7 @@
     "instructors": ["Lucas Rodriguez", "Mia Evans"],
     "difficultyLevel": "beginner",
     "topics": ["MongoDB Basics", "Collections", "Documents", "Queries"],
-    "photos": ["src/assets/images/slider5.webp"],
+    "photos": ["/src/assets/images/study1.webp"],
     "category": "Backend development",
     "description": "Get started with MongoDB, a NoSQL database, and learn how to interact with it."
   },
@@ -85,19 +85,19 @@
     "instructors": ["Ethan Taylor", "Amelia Thompson"],
     "difficultyLevel": "intermediate",
     "topics": ["Asynchronous Programming", "Streams", "Error Handling", "Authentication"],
-    "photos": ["src/assets/images/slider2.webp"],
+    "photos": ["/src/assets/images/slider2.webp"],
     "category": "Backend development",
     "description": "Take your Node.js skills to the next level with advanced concepts and best practices."
   },
   {
     "id": 10,
-    "title": "UI/UX Design Basics",
+    "title": "Web Design Basics",
     "instructors": ["William Harris", "Zoe Scott"],
     "difficultyLevel": "beginner",
-    "topics": ["UI/UX Principles", "Wireframing", "Prototyping", "User Testing"],
-    "photos": ["src/assets/images/slider5.webp"],
-    "category": "UI/UX design",
-    "description": "Learn the essential principles of UI/UX design and how to create user-friendly interfaces."
+    "topics": ["Web Principles", "Wireframing", "Prototyping", "User Testing"],
+    "photos": ["/src/assets/images/slider5.webp"],
+    "category": "Web design",
+    "description": "Learn the essential principles of Web design and how to create user-friendly interfaces."
   },
   {
     "id": 11,
@@ -105,8 +105,8 @@
     "instructors": ["Ethan Green", "Sophia Martin"],
     "difficultyLevel": "intermediate",
     "topics": ["Figma Basics", "Design Systems", "Prototyping", "Collaboration"],
-    "photos": ["src/assets/images/slider3.webp"],
-    "category": "UI/UX design",
+    "photos": ["/src/assets/images/slider3.webp"],
+    "category": "Web design",
     "description": "Master Figma and create stunning designs for web and mobile applications."
   },
   {
@@ -115,7 +115,7 @@
     "instructors": ["Olivia Carter", "Mason Mitchell"],
     "difficultyLevel": "beginner",
     "topics": ["Memory Exercises", "Problem-Solving Skills", "Focus Improvement"],
-    "photos": ["src/assets/images/slider1.webp"],
+    "photos": ["/src/assets/images/slider1.webp"],
     "category": "Brain Training",
     "description": "Enhance your cognitive abilities with exercises designed to improve memory and focus."
   },
@@ -125,7 +125,7 @@
     "instructors": ["Lily Lewis", "James Walker"],
     "difficultyLevel": "beginner",
     "topics": ["Active Listening", "Effective Speaking", "Feedback Techniques"],
-    "photos": ["src/assets/images/study5.webp"],
+    "photos": ["/src/assets/images/study5.webp"],
     "category": "Brain Training",
     "description": "Improve your communication skills and learn how to work better with teams."
   },
@@ -135,7 +135,7 @@
     "instructors": ["Benjamin King", "Chloe Harris"],
     "difficultyLevel": "beginner",
     "topics": ["Basic English Vocabulary", "Technical English", "Workplace Communication"],
-    "photos": ["src/assets/images/engl3.webp"],
+    "photos": ["/src/assets/images/engl3.webp"],
     "category": "English for developers",
     "description": "Learn English specifically for developers, covering technical terms and workplace communication."
   },
@@ -145,7 +145,7 @@
     "instructors": ["Aiden White", "Lily Lee"],
     "difficultyLevel": "intermediate",
     "topics": ["Advanced Vocabulary", "Writing Emails", "Reading Documentation"],
-    "photos": ["src/assets/images/engl2.webp"],
+    "photos": ["/src/assets/images/engl2.webp"],
     "category": "English for developers",
     "description": "Take your English to the next level with advanced vocabulary and technical writing skills."
   },
@@ -155,7 +155,7 @@
     "instructors": ["Christopher Wright", "Sophie Lewis"],
     "difficultyLevel": "advanced",
     "topics": ["Closures", "Promises", "Async/Await", "Event Loop"],
-    "photos": ["src/assets/images/coding1.webp"],
+    "photos": ["/src/assets/images/JavaScript1.webp"],
     "category": "Frontend development",
     "description": "Dive deep into JavaScript with advanced concepts and techniques."
   },
@@ -165,7 +165,7 @@
     "instructors": ["Grace Perez", "David Martinez"],
     "difficultyLevel": "intermediate",
     "topics": ["API Design", "Authentication", "Security", "Versioning"],
-    "photos": ["src/assets/images/coding2.webp"],
+    "photos": ["/src/assets/images/coding2.webp"],
     "category": "Backend development",
     "description": "Learn how to build secure and efficient REST APIs using Node.js."
   },
@@ -175,8 +175,8 @@
     "instructors": ["Jack Scott", "Maya Gonzalez"],
     "difficultyLevel": "intermediate",
     "topics": ["Responsive Design", "Mobile-first", "Gestures", "Navigation"],
-    "photos": ["src/assets/images/study8.webp"],
-    "category": "UI/UX design",
+    "photos": ["/src/assets/images/study8.webp"],
+    "category": "Web design",
     "description": "Design beautiful and functional user interfaces for mobile applications."
   },
   {
@@ -185,7 +185,7 @@
     "instructors": ["Ryan Thomas", "Ella Clark"],
     "difficultyLevel": "intermediate",
     "topics": ["Aggregation Framework", "Indexes", "Replication", "Sharding"],
-    "photos": ["src/assets/images/slider5.webp"],
+    "photos": ["/src/assets/images/mongo2.webp"],
     "category": "Backend development",
     "description": "Master advanced MongoDB techniques for building scalable and efficient databases."
   },
@@ -195,8 +195,8 @@
     "instructors": ["Natalie Jackson", "Aaron Green"],
     "difficultyLevel": "intermediate",
     "topics": ["Empathy", "Prototyping", "Iteration", "Testing"],
-    "photos": ["src/assets/images/coding3.webp"],
-    "category": "UI/UX design",
+    "photos": ["/src/assets/images/coding3.webp"],
+    "category": "Web design",
     "description": "Learn the design thinking methodology for solving complex problems with creative solutions."
   },
   {
@@ -205,7 +205,7 @@
     "instructors": ["Zachary Young", "Harper Turner"],
     "difficultyLevel": "beginner",
     "topics": ["Version Control", "Repositories", "Commits", "Branches"],
-    "photos": ["src/assets/images/coding5.webp"],
+    "photos": ["/src/assets/images/coding5.webp"],
     "category": "Frontend development",
     "description": "Understand how to use Git and GitHub for version control and collaboration in development."
   },
@@ -215,7 +215,7 @@
     "instructors": ["Eleanor Harris", "Oliver Clark"],
     "difficultyLevel": "advanced",
     "topics": ["Sorting Algorithms", "Binary Trees", "Graphs", "Recursion"],
-    "photos": ["src/assets/images/study7.webp"],
+    "photos": ["/src/assets/images/study7.webp"],
     "category": "Brain Training",
     "description": "Strengthen your problem-solving skills by learning essential algorithms and data structures."
   },
@@ -225,7 +225,7 @@
     "instructors": ["Avery Smith", "Isabella Lee"],
     "difficultyLevel": "advanced",
     "topics": ["Tech Writing", "Conferences", "Presentations", "Job Interviews"],
-    "photos": ["src/assets/images/engl1.webp"],
+    "photos": ["/src/assets/images/engl1.webp"],
     "category": "English for developers",
     "description": "Master professional English for developers, focusing on writing, presenting, and interviews."
   },
@@ -235,7 +235,7 @@
     "instructors": ["Avery Smith", "Isabella Lee"],
     "difficultyLevel": "advanced",
     "topics": ["Tech Writing", "Conferences", "Presentations", "Job Interviews"],
-    "photos": ["src/assets/images/engl4.webp"],
+    "photos": ["/src/assets/images/engl4.webp"],
     "category": "English for developers",
     "description": "Master professional English  focusing on self-presenting, and interviews."
   },
@@ -245,19 +245,19 @@
     "instructors": ["William Adams", "Zoe Fisher"],
     "difficultyLevel": "advanced",
     "topics": ["React", "Node.js", "Express", "MongoDB"],
-    "photos": ["src/assets/images/study1.webp"],
+    "photos": ["/src/assets/images/study1.webp"],
     "category": "Frontend development",
     "description": "Learn how to build full-stack applications using React for the frontend and Node.js for the backend."
   },
   {
     "id": 26,
-    "title": "Advanced UI/UX Design",
+    "title": "Advanced Web Design",
     "instructors": ["Samuel King", "Lily Evans"],
     "difficultyLevel": "advanced",
     "topics": ["Design Systems", "User Research", "Usability Testing", "High-fidelity Prototyping"],
-    "photos": ["src/assets/images/study2.webp"],
-    "category": "UI/UX design",
-    "description": "Take your UI/UX design skills to the next level with advanced design techniques and tools."
+    "photos": ["/src/assets/images/study2.webp"],
+    "category": "Web design",
+    "description": "Take your Web design skills to the next level with advanced design techniques and tools."
   },
   {
     "id": 27,
@@ -265,7 +265,7 @@
     "instructors": ["John Smith", "Alice Johnson"],
     "difficultyLevel": "beginner",
     "topics": ["Algebra", "Geometry", "Statistics", "Problem-solving techniques"],
-    "photos": ["src/assets/images/study10.webp"],
+    "photos": ["/src/assets/images/study10.webp"],
     "category": "Mathematics",
     "description": "This course introduces the essential mathematical concepts needed for problem-solving in programming. Topics include algebra, basic geometry, and data analysis techniques."
   },
@@ -275,7 +275,7 @@
     "instructors": ["Mary Lee", "Michael Brown"],
     "difficultyLevel": "beginner",
     "topics": ["Computer hardware", "Operating systems", "Basic software tools", "Internet navigation"],
-    "photos": ["src/assets/images/study9.webp"],
+    "photos": ["/src/assets/images/study9.webp"],
     "category": "Computer Literacy",
     "description": "Learn how to navigate the world of computers. This course covers computer hardware basics, operating systems, and fundamental software tools to get you started."
   },
@@ -285,7 +285,7 @@
     "instructors": ["Robert Green", "Sandra White"],
     "difficultyLevel": "advanced",
     "topics": ["Sorting algorithms", "Search algorithms", "Trees", "Graphs", "Dynamic programming"],
-    "photos": ["src/assets/images/study3.webp"],
+    "photos": ["/src/assets/images/study3.webp"],
     "category": "Computer Science",
     "description": "Dive deep into advanced algorithms and data structures. Topics include sorting, searching, trees, and graphs, aimed at providing a strong foundation for tackling complex problems."
   },
@@ -295,7 +295,7 @@
     "instructors": ["Emily Wilson", "David Harris"],
     "difficultyLevel": "intermediate",
     "topics": ["Logic", "Set theory", "Combinatorics", "Graph theory", "Number theory"],
-    "photos": ["src/assets/images/study4.webp"],
+    "photos": ["/src/assets/images/study4.webp"],
     "category": "Mathematics",
     "description": "This course provides an introduction to discrete mathematics, a crucial area for understanding algorithms, cryptography, and more. Topics include logic, set theory, combinatorics, and graph theory."
   }

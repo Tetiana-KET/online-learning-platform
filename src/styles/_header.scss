@@ -113,9 +113,11 @@
 }
 
 .courses-category__item {
-  padding: 10px;
   transition: var.$transition;
   cursor: pointer;
+  a {
+    padding: 10px;
+  }
 }
 
 .disabled-link {
@@ -150,6 +152,7 @@
   }
 }
 
+// B U R G E R
 .header__burger {
   display: none;
 

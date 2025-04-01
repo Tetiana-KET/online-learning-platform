@@ -9,6 +9,7 @@ export function CourseItem(name: string, tag: string, isLink: boolean, value?: s
   if (isLink) {
     const link = document.createElement('a');
     link.href = `/gallery/${name.toLocaleLowerCase().replace(/\s+/g, '-')}`;
+    link.setAttribute('data-link', '');
     link.text = `${name}`;
     courseItem.append(link);
   } else {

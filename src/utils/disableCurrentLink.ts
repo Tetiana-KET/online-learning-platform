@@ -1,7 +1,9 @@
 export function disableCurrentLink(route: string) {
   document.querySelectorAll('[data-link]').forEach((link) => {
     const target = link as HTMLAnchorElement;
-    if (target.getAttribute('href') === route) {
+    const href = target.getAttribute('href') || '';
+
+    if (href === route || (route.startsWith('/gallery') && href === '/gallery')) {
       target.classList.add('disabled-link');
       target.setAttribute('aria-disabled', 'true');
       target.closest('li')?.classList.add('disabled-link');

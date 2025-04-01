@@ -17,7 +17,14 @@ let filteredCourses: Course[] = [...sortedCourses];
 
 export function renderGallery() {
   appendNodeToRoot(Gallery(currentPage, totalPages, loadCourses, handleSearch));
-  renderGalleryCards(filteredCourses);
+
+  const path = window.location.pathname;
+  const category = path.split('/')[2]?.replace(/-/g, ' ') || 'select category';
+  const filter = document.getElementById('actionsSelect');
+  if (filter) {
+    (filter as HTMLSelectElement).value = category;
+  }
+  handleCategoryChange(category);
 }
 
 export function loadCourses(page: number = 1, append: boolean, courses: Course[] = filteredCourses) {
