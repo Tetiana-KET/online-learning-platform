@@ -3,7 +3,7 @@ import { handleCategoryChange } from '@controllers/renderGallery';
 import { toggleSelectOpen } from '@controllers/toggleSelectOpen';
 
 export function CourseFilter() {
-  const options = createCourseItems('option');
+  const options = createCourseItems('option', false);
 
   const actionsSelectWrap = document.createElement('div');
   actionsSelectWrap.id = 'actionsSelectWrap';
