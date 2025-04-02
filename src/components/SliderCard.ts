@@ -1,4 +1,5 @@
 import { Course } from '@models/Course';
+import { replaceSpaceWithDash } from '@utils/replaceSpaceWithDash';
 
 export function SliderCard(props: Course) {
   const { title, photos, description, id } = props;
@@ -28,7 +29,7 @@ export function SliderCard(props: Course) {
   const courseLink = document.createElement('a');
   courseLink.classList.add('slider__item-link');
   courseLink.setAttribute('data-link', '');
-  courseLink.href = `/course/${id}`;
+  courseLink.href = `/course/${replaceSpaceWithDash(title)}_${id}`;
 
   figcaption.append(courseTitle, courseInfo);
   figure.append(slideImg, figcaption, courseLink);

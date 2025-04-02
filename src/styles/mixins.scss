@@ -5,6 +5,10 @@
   max-width: 1600px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @media screen and (width <= 550px) {
+    padding: 0 10px;
+  }
 }
 
 @mixin button-styles($bg-color) {
@@ -66,11 +70,21 @@
 }
 
 @mixin title {
-  font-size: 50px;
+  font-size: 68px;
   font-weight: 700;
   line-height: 125%;
   text-align: center;
   margin-bottom: 40px;
+
+  span {
+    color: var.$accent-color;
+    font-style: italic;
+  }
+
+  @media screen and (width <= 550px) {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 @mixin btn-disabled {

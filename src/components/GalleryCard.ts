@@ -1,7 +1,9 @@
 import { Course } from '@models/Course';
+import { replaceSpaceWithDash } from '@utils/replaceSpaceWithDash';
+import { Button } from './Button';
 
 export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
-  const { title, photos, description, id, instructors, difficultyLevel, topics, category } = props;
+  const { title, photos, description, id, instructors, difficultyLevel, topics, category, addInfo } = props;
   const galleryCard = document.createElement('div');
   galleryCard.classList.add('gallery__card');
 
@@ -34,7 +36,7 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
 
   const courseLink = document.createElement('a');
   courseLink.classList.add('course-info__link');
-  courseLink.href = `/course/${id}`;
+  courseLink.href = `/course/${replaceSpaceWithDash(title)}_${id}`;
   courseLink.setAttribute('data-link', '');
 
   // Category
@@ -55,26 +57,54 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
   // Conditional Details
   if (isDetailsOpen) {
     galleryCard.classList.add('details_open');
+    const detailsAdditional = document.createElement('div');
+    detailsAdditional.classList.add('details__additional');
+
+    // image shadow
+    const imgShadow = document.createElement('div');
+    imgShadow.classList.add('img-shadow');
+    imgWrap.append(imgShadow);
 
     // Instructors
     const instructorsList = document.createElement('ul');
+    instructorsList.innerHTML = `<span>Course Mentors:</span>`;
     instructorsList.classList.add('course-info__instructors');
     instructors.forEach((instructor) => {
       const instructorItem = document.createElement('li');
-      instructorItem.textContent = instructor;
+      instructorItem.textContent = `${instructor};`;
       instructorsList.append(instructorItem);
     });
+    figcaption.append(instructorsList);
+
+    // Enroll button
+    const buttonWrap = document.createElement('div');
+    buttonWrap.classList.add('enroll-button-wrap');
+    const enrollButton = Button('Enroll', '');
+    figure.after(buttonWrap);
+    buttonWrap.append(enrollButton);
+
+    //add-info
+    const addInfoWrap = document.createElement('div');
+    addInfoWrap.classList.add('course__detail-info');
+    const addInfoTitle = document.createElement('h3');
+    addInfoTitle.innerHTML = 'Course <span>Details</span>';
+    const addInfoText = document.createElement('p');
+    addInfoText.textContent = addInfo;
 
     // Topics
     const topicsList = document.createElement('ul');
+    topicsList.innerHTML = `<span>Topics:</span>`;
     topicsList.classList.add('course-info__topics');
     topics.forEach((topic) => {
       const topicItem = document.createElement('li');
-      topicItem.textContent = topic;
+      topicItem.textContent = `${topic};`;
       topicsList.append(topicItem);
     });
 
-    figcaption.append(instructorsList, difficulty, topicsList, courseCategory);
+    addInfoWrap.append(addInfoTitle);
+    addInfoWrap.append(addInfoText);
+    addInfoWrap.append(topicsList);
+    galleryCard.append(addInfoWrap);
   }
   return galleryCard;
 }

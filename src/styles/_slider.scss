@@ -9,11 +9,6 @@
 
   &__title {
     @include mix.title;
-
-    span {
-      color: var.$accent-color;
-      font-style: italic;
-    }
   }
 
   &__slider-wrap {

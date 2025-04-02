@@ -59,8 +59,8 @@ export const Router = {
         scrollToSection(route);
         break;
       case route.startsWith('/course/'):
-        const courseId = route.split('/')[2];
-        renderCourseDetails(courseId);
+        const coursePath = route.split('/')[2];
+        renderCourseDetails(coursePath);
         break;
       default:
         renderNotFound();
