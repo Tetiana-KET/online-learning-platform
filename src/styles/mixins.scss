@@ -1,4 +1,5 @@
 @use './variables.scss' as var;
+@use 'sass:color';
 
 @mixin container {
   max-width: 1600px;
@@ -18,7 +19,7 @@
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-      background-color: adjust-color($bg-color, $lightness: -5%);
+      background-color: color.adjust($bg-color, $lightness: -5%);
       box-shadow: var.$box-shadow;
     }
   }

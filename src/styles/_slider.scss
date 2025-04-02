@@ -59,8 +59,6 @@
   }
 
   &__arrows {
-    @include mix.round-buttons;
-
     position: absolute;
     top: 50.5%;
     transform: translateY(-50%);
@@ -68,6 +66,8 @@
     & svg {
       transition: var.$transition;
     }
+
+    @include mix.round-buttons;
 
     @media screen and (width <= 850px) {
       display: none;

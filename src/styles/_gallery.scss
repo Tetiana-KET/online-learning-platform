@@ -12,9 +12,9 @@
     flex: 1;
 
     .show-more-btn {
-      @include mix.button-styles(var.$accent-color);
-
       margin-bottom: 10px;
+
+      @include mix.button-styles(var.$accent-color);
     }
   }
 
