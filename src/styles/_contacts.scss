@@ -2,8 +2,6 @@
 @use './variables.scss' as var;
 
 .page-wrap {
-  padding: 50px 0;
-
   & span {
     color: var.$accent-color;
     font-style: italic;
@@ -12,13 +10,14 @@
 }
 
 .contacts {
-  margin-bottom: 50px;
-
   &__container {
     flex-direction: column;
   }
 
   &__title {
+    width: 100%;
+    justify-self: flex-start;
+
     @include mix.title;
   }
 

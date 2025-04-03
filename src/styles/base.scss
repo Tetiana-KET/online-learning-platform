@@ -19,11 +19,11 @@ html {
 }
 
 [class*='__container'] {
-  @include mix.container;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include mix.container;
 }
 
 #app {
@@ -59,9 +59,6 @@ ul li a {
 }
 
 .main {
-  @include mix.container;
-
-  max-width: none;
   display: flex;
   flex-direction: column;
   width: 100%;

@@ -5,7 +5,7 @@
     "instructors": ["John Doe", "Jane Smith"],
     "difficultyLevel": "beginner",
     "topics": ["HTML Basics", "Tags", "Attributes", "Forms"],
-    "photos": ["/src/assets/images/teaching3.webp"],
+    "photos": ["/src/assets/images/study1.webp"],
     "category": "Frontend development",
     "description": "Learn the basics of HTML, the standard markup language for creating web pages.",
     "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "title": "Advanced CSS Techniques",
-    "instructors": ["James Carter", "Olivia Lee"],
+    "instructors": ["Alice Brown", "Robert Green"],
     "difficultyLevel": "intermediate",
     "topics": ["CSS Animations", "Transitions", "Media Queries", "Custom Properties"],
     "photos": ["/src/assets/images/learn-to-code.webp"],
@@ -46,10 +46,10 @@
   {
     "id": 5,
     "title": "React.js for Beginners",
-    "instructors": ["Sophia Clark"],
+    "instructors": ["Sophia Clark", "Alice Brown"],
     "difficultyLevel": "beginner",
     "topics": ["React Basics", "Components", "State Management", "Props"],
-    "photos": ["/src/assets/images/teaching1.webp"],
+    "photos": ["/src/assets/images/study4.webp"],
     "category": "Frontend development",
     "description": "Learn the basics of React.js and how to build dynamic user interfaces.",
     "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "title": "Node.js Introduction",
-    "instructors": ["Daniel Miller", "Sophia Clark"],
+    "instructors": ["Robert Green", "Sophia Clark"],
     "difficultyLevel": "beginner",
     "topics": ["Node.js Overview", "Event Loop", "Modules", "File System"],
     "photos": ["/src/assets/images/slider4.webp"],
@@ -82,7 +82,7 @@
     "instructors": ["Lucas Rodriguez", "Mia Evans"],
     "difficultyLevel": "beginner",
     "topics": ["MongoDB Basics", "Collections", "Documents", "Queries"],
-    "photos": ["/src/assets/images/study1.webp"],
+    "photos": ["/src/assets/images/teaching3.webp"],
     "category": "Backend development",
     "description": "Get started with MongoDB, a NoSQL database, and learn how to interact with it.",
     "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
@@ -167,7 +167,7 @@
   {
     "id": 16,
     "title": "JavaScript Advanced Concepts",
-    "instructors": ["Christopher Wright", "Sophie Lewis"],
+    "instructors": ["Robert Green", "Michael Johnson"],
     "difficultyLevel": "advanced",
     "topics": ["Closures", "Promises", "Async/Await", "Event Loop"],
     "photos": ["/src/assets/images/JavaScript1.webp"],
@@ -178,7 +178,7 @@
   {
     "id": 17,
     "title": "Building REST APIs with Node.js",
-    "instructors": ["Grace Perez", "David Martinez"],
+    "instructors": ["Mia Evans", "Ethan Taylor"],
     "difficultyLevel": "intermediate",
     "topics": ["API Design", "Authentication", "Security", "Versioning"],
     "photos": ["/src/assets/images/coding2.webp"],
@@ -189,10 +189,10 @@
   {
     "id": 18,
     "title": "UI Design for Mobile Applications",
-    "instructors": ["Jack Scott", "Maya Gonzalez"],
+    "instructors": ["Zoe Scott", "Ethan Green"],
     "difficultyLevel": "intermediate",
     "topics": ["Responsive Design", "Mobile-first", "Gestures", "Navigation"],
-    "photos": ["/src/assets/images/study8.webp"],
+    "photos": ["/src/assets/images/study7.webp"],
     "category": "Web design",
     "description": "Design beautiful and functional user interfaces for mobile applications.",
     "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
@@ -211,7 +211,7 @@
   {
     "id": 20,
     "title": "Design Thinking",
-    "instructors": ["Natalie Jackson", "Aaron Green"],
+    "instructors": ["Ethan Green", "Sophia Martin"],
     "difficultyLevel": "intermediate",
     "topics": ["Empathy", "Prototyping", "Iteration", "Testing"],
     "photos": ["/src/assets/images/coding3.webp"],
@@ -222,7 +222,7 @@
   {
     "id": 21,
     "title": "Learning Git and GitHub",
-    "instructors": ["Zachary Young", "Harper Turner"],
+    "instructors": ["Michael Johnson", "Sarah Williams"],
     "difficultyLevel": "beginner",
     "topics": ["Version Control", "Repositories", "Commits", "Branches"],
     "photos": ["/src/assets/images/coding5.webp"],
@@ -236,7 +236,7 @@
     "instructors": ["Eleanor Harris", "Oliver Clark"],
     "difficultyLevel": "advanced",
     "topics": ["Sorting Algorithms", "Binary Trees", "Graphs", "Recursion"],
-    "photos": ["/src/assets/images/study7.webp"],
+    "photos": ["/src/assets/images/study8.webp"],
     "category": "Brain Training",
     "description": "Strengthen your problem-solving skills by learning essential algorithms and data structures.",
     "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
@@ -244,7 +244,7 @@
   {
     "id": 23,
     "title": "English for Developers: Level 3",
-    "instructors": ["Avery Smith", "Isabella Lee"],
+    "instructors": ["Chloe Harris", "Aiden White"],
     "difficultyLevel": "advanced",
     "topics": ["Tech Writing", "Conferences", "Presentations", "Job Interviews"],
     "photos": ["/src/assets/images/engl1.webp"],
@@ -255,7 +255,7 @@
   {
     "id": 24,
     "title": "English for Developers",
-    "instructors": ["Avery Smith", "Isabella Lee"],
+    "instructors": ["Lily Lee", "Benjamin King"],
     "difficultyLevel": "advanced",
     "topics": ["Tech Writing", "Conferences", "Presentations", "Job Interviews"],
     "photos": ["/src/assets/images/engl4.webp"],
@@ -266,7 +266,7 @@
   {
     "id": 25,
     "title": "Building Full-stack Applications with React and Node.js",
-    "instructors": ["William Adams", "Zoe Fisher"],
+    "instructors": ["John Doe", "Jane Smith"],
     "difficultyLevel": "advanced",
     "topics": ["React", "Node.js", "Express", "MongoDB"],
     "photos": ["/src/assets/images/study1.webp"],
@@ -277,7 +277,7 @@
   {
     "id": 26,
     "title": "Advanced Web Design",
-    "instructors": ["Samuel King", "Lily Evans"],
+    "instructors": ["William Harris", "Zoe Scott"],
     "difficultyLevel": "advanced",
     "topics": ["Design Systems", "User Research", "Usability Testing", "High-fidelity Prototyping"],
     "photos": ["/src/assets/images/study2.webp"],
@@ -288,7 +288,7 @@
   {
     "id": 27,
     "title": "Basic Mathematics for Developers",
-    "instructors": ["John Smith", "Alice Johnson"],
+    "instructors": ["Emily Wilson", "David Harris"],
     "difficultyLevel": "beginner",
     "topics": ["Algebra", "Geometry", "Statistics", "Problem-solving techniques"],
     "photos": ["/src/assets/images/study10.webp"],
@@ -324,7 +324,7 @@
     "instructors": ["Emily Wilson", "David Harris"],
     "difficultyLevel": "intermediate",
     "topics": ["Logic", "Set theory", "Combinatorics", "Graph theory", "Number theory"],
-    "photos": ["/src/assets/images/study4.webp"],
+    "photos": ["/src/assets/images/teaching1.webp"],
     "category": "Mathematics",
     "description": "This course provides an introduction to discrete mathematics, a crucial area for understanding algorithms, cryptography, and more. Topics include logic, set theory, combinatorics, and graph theory.",
     "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"

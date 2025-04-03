@@ -4,14 +4,19 @@
 .details {
   padding: 20px 0;
 
-  .course__detail-info {
-    width: 95%;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 10px;
+  // ARTICLE DETAILS-INFO
+  .details-info {
+    margin: 30px 0;
+    background-color: var.$light-grey;
     box-shadow: var.$box-shadow;
 
+    &__container {
+      flex-direction: column;
+    }
+
     h3 {
+      text-align: center;
+
       @include mix.title;
     }
 
@@ -68,7 +73,7 @@
         transform: scale(0.8);
         border-radius: 25px;
         background: var.$light-grey;
-        filter: blur(20px);
+        filter: blur(15px);
       }
 
       & img {
@@ -98,8 +103,6 @@
 
       &__title {
         @include mix.title;
-
-        text-align: left;
       }
 
       &__description {
@@ -123,11 +126,11 @@
         }
       }
 
-      &__topics,
-      &__instructors {
+      &__topics {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+        font-weight: 500;
 
         & span {
           font-weight: 700;

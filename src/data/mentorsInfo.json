@@ -1,0 +1,240 @@
+[
+  {
+    "name": "John Doe",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo.webp"
+  },
+  {
+    "name": "Jane Smith",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman.webp"
+  },
+  {
+    "name": "David Harris",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo1.webp"
+  },
+  {
+    "name": "Emily Wilson",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman1.webp"
+  },
+  {
+    "name": "Sandra White",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman2.webp"
+  },
+  {
+    "name": "Mary Lee",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman3.webp"
+  },
+  {
+    "name": "Michael Brown",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo2.webp"
+  },
+  {
+    "name": "Oliver Clark",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo3.webp"
+  },
+  {
+    "name": "Alice Brown",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman4.webp"
+  },
+  {
+    "name": "Mia Evans",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman5.webp"
+  },
+  {
+    "name": "Chloe Harris",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman6.webp"
+  },
+  {
+    "name": "Sophia Martin",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman7.webp"
+  },
+  {
+    "name": "Ethan Green",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo4.webp"
+  },
+  {
+    "name": "James Walker",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo5.webp"
+  },
+  {
+    "name": "Lily Lee",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman8.webp"
+  },
+  {
+    "name": "Ryan Thomas",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo6.webp"
+  },
+  {
+    "name": "Ella Clark",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman9.webp"
+  },
+  {
+    "name": "Zoe Scott",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman10.webp"
+  },
+  {
+    "name": "William Harris",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo7.webp"
+  },
+  {
+    "name": "Sophia Clark",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman11.webp"
+  },
+  {
+    "name": "Amelia Thompson",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman12.webp"
+  },
+  {
+    "name": "Liam Davis",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman13.webp"
+  },
+  {
+    "name": "Charlotte Adams",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman14.webp"
+  },
+  {
+    "name": "Ethan Taylor",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo8.webp"
+  },
+  {
+    "name": "Lucas Rodriguez",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo9.webp"
+  },
+  {
+    "name": "Eleanor Harris",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman15.webp"
+  },
+  {
+    "name": "Andrey White",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo14.webp"
+  },
+  {
+    "name": "Benjamin King",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo10.webp"
+  },
+  {
+    "name": "Lily Lewis",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman16.webp"
+  },
+  {
+    "name": "Mason Mitchell",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo11.webp"
+  },
+  {
+    "name": "Olivia Carter",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman17.webp"
+  },
+  {
+    "name": "Sarah Williams",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo-woman18.webp"
+  },
+  {
+    "name": "Michael Johnson",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo12.webp"
+  },
+  {
+    "name": "Robert Green",
+    "role": "Lorem, ipsum dolor sit amet consectetur",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse id ipsam numquam saepe possimus earum temporibus, odio expedita itaque facilis praesentium eius voluptatum sit ex illum! Nisi, error qui!",
+    "github": "https://github.com/",
+    "photo": "/src/assets/images/mentor-photo13.webp"
+  }
+]

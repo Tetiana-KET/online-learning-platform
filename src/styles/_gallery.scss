@@ -7,12 +7,11 @@
 
   &__container {
     width: 100%;
-    padding: 25px 0;
     flex-direction: column;
     flex: 1;
 
     .show-more-btn {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
 
       @include mix.button-styles(var.$accent-color);
     }
@@ -24,7 +23,11 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 550px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__card {
