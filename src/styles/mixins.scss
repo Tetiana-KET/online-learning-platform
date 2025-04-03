@@ -29,7 +29,7 @@
   }
 }
 
-@mixin round-buttons {
+@mixin round-buttons($bg-color: var.$default-bg) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@
   border-radius: 100px;
   border: 2px solid var.$accent-color;
   color: var.$accent-color;
+  background-color: $bg-color;
   transition: var.$transition;
   cursor: pointer;
 

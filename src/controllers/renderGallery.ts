@@ -8,6 +8,7 @@ import { updatePagination } from '@utils/updatePagination';
 import { NotFound } from '@pages/NotFound';
 import { sortBy } from '@utils/sortBy';
 import { SortByType } from '@models/SortByType';
+import { scrollToTop } from '@utils/scrollToTop';
 
 let currentPage = 1;
 let totalPages = 1;
@@ -36,10 +37,7 @@ export function loadCourses(page: number = 1, append: boolean, courses: Course[]
     renderGalleryCards(coursesOnPage, true);
   } else {
     renderGalleryCards(coursesOnPage, false);
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    scrollToTop();
   }
 
   const showMoreButton = document.getElementById('showMoreButton');

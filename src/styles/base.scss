@@ -1,4 +1,5 @@
 @use './mixins.scss' as mix;
+@use './variables.scss' as var;
 
 html {
   scroll-behavior: smooth;
@@ -40,6 +41,10 @@ body {
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -74,4 +79,33 @@ ul li a {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
+}
+
+.top-button {
+  position: fixed;
+  z-index: 11;
+  bottom: 10px;
+  right: 10px;
+  @include mix.round-buttons(var.$accent-color);
+
+  svg {
+    max-width: 50%;
+    fill: var.$light-grey;
+    transition: var.$transition;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: var.$box-shadow;
+    }
+
+    &:hover svg {
+      fill: var.$accent-color;
+    }
+  }
+  @include mix.hidden;
+
+  &.visible {
+    @include mix.visible;
+  }
 }
