@@ -86,13 +86,19 @@ ul li a {
   z-index: 11;
   bottom: 10px;
   right: 10px;
-  @include mix.round-buttons(var.$accent-color);
 
   svg {
     max-width: 50%;
     fill: var.$light-grey;
     transition: var.$transition;
   }
+
+  &.visible {
+    @include mix.visible;
+  }
+
+  @include mix.round-buttons(var.$accent-color);
+  @include mix.hidden;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
@@ -102,10 +108,5 @@ ul li a {
     &:hover svg {
       fill: var.$accent-color;
     }
-  }
-  @include mix.hidden;
-
-  &.visible {
-    @include mix.visible;
   }
 }

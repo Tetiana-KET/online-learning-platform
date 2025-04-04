@@ -1,7 +1,8 @@
 @use './mixins.scss' as mix;
 @use './variables.scss' as var;
 
-.mentors {
+.mentors,
+.best-mentors {
   &__container {
     gap: 20px;
 

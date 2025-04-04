@@ -2,9 +2,11 @@
 @use 'sass:color';
 
 @mixin container {
-  max-width: 1600px;
-  padding: 50px 20px;
-  margin: 0 auto;
+  & {
+    max-width: 1600px;
+    padding: 50px 20px;
+    margin: 0 auto;
+  }
 
   @media screen and (width <= 550px) {
     padding: 20px 10px;
@@ -12,14 +14,16 @@
 }
 
 @mixin button-styles($bg-color) {
-  width: 120px;
-  padding: 12px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: $bg-color;
-  color: var.$white;
-  transition: var.$transition;
+  & {
+    width: 120px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: $bg-color;
+    color: var.$white;
+    transition: var.$transition;
+  }
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
@@ -30,17 +34,19 @@
 }
 
 @mixin round-buttons($bg-color: var.$default-bg) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  border: 2px solid var.$accent-color;
-  color: var.$accent-color;
-  background-color: $bg-color;
-  transition: var.$transition;
-  cursor: pointer;
+  & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid var.$accent-color;
+    color: var.$accent-color;
+    background-color: $bg-color;
+    transition: var.$transition;
+    cursor: pointer;
+  }
 
   @media screen and (width <= 550px) {
     width: 40px;
@@ -63,27 +69,33 @@
 }
 
 @mixin hidden {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: var.$transition;
+  & {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: var.$transition;
+  }
 }
 
 @mixin visible {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+  & {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @mixin title {
-  font-size: 68px;
-  font-weight: 700;
-  line-height: 125%;
-  margin-bottom: 50px;
+  & {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 50px;
 
-  span {
-    color: var.$accent-color;
-    font-style: italic;
+    span {
+      color: var.$accent-color;
+      font-style: italic;
+    }
   }
 
   @media screen and (width <= 550px) {

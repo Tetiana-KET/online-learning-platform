@@ -2,7 +2,7 @@
 @use './variables.scss' as var;
 
 .page-wrap {
-  & span {
+  span {
     color: var.$accent-color;
     font-style: italic;
     font-weight: bold;

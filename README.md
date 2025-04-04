@@ -23,10 +23,13 @@ An educational platform for users to browse and access various courses. The plat
 ![alt text](image.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-6.png)
 ![alt text](image-5.png)
+![alt text](image-7.png)
 
-## Installation
+# Installation
 
 ### Prerequisites
 
@@ -43,7 +46,7 @@ Make sure nmp is installed by running
 npm -v
 ```
 
-### To get started with this project, follow the steps below:
+## To get started with this project, follow the steps below:
 
 1. Clone the repository:
 

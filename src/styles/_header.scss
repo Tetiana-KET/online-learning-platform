@@ -56,8 +56,6 @@
   }
 
   .courses {
-    @include mix.hidden;
-
     position: absolute;
     z-index: 11;
     width: max-content;
@@ -72,6 +70,8 @@
     min-width: 200px;
     box-shadow: var.$box-shadow;
     border-radius: 10px;
+
+    @include mix.hidden;
   }
 
   @media (width <= 500px) {

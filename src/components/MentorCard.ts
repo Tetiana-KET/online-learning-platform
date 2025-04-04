@@ -2,7 +2,7 @@ import { MentorInfoInterface } from '@models/MentorInfoInterface';
 import ImageFigure from './ImageFigure';
 
 export function MentorCard(mentorInfo: MentorInfoInterface) {
-  const mentorCard = document.createElement('div');
+  const mentorCard = document.createElement('article');
   mentorCard.classList.add('mentor__card');
   const imgWrap = document.createElement('div');
 
