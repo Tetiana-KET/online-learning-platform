@@ -79,6 +79,7 @@
       & img {
         transform: scale(0.8) translate(0, 3%) rotate(10deg);
         border-radius: 25px;
+        box-shadow: var.$img-shadow;
       }
 
       @media screen and (width >= 1340px) {

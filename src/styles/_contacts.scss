@@ -28,6 +28,8 @@
 
   &__map {
     flex: 1 1 48%;
+    border-radius: 15px;
+    overflow: hidden;
     box-shadow: var.$box-shadow;
 
     & iframe {
@@ -103,6 +105,10 @@
     flex: 1 1 45%;
     border-radius: 15px;
     overflow: hidden;
+  }
+
+  &__img-wrap {
+    box-shadow: var.$img-shadow;
   }
 
   &__img-wrap img {
