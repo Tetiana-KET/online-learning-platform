@@ -33,7 +33,7 @@ export async function loadCourses(page: number = 1, append: boolean, courses: Co
 
   document.body.classList.add('loading');
 
-  await new Promise((resolve) => setTimeout(resolve, 600)).then(() => document.body.classList.remove('loading'));
+  await new Promise((resolve) => setTimeout(resolve, 300)).then(() => document.body.classList.remove('loading'));
 
   const { coursesOnPage, totalPages: newTotalPages } = getPaginatedCourses(page, courses);
   totalPages = newTotalPages;

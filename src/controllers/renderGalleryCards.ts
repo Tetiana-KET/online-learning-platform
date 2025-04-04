@@ -1,5 +1,6 @@
 import { Course } from '@models/Course';
 import { GalleryCard } from '@components/GalleryCard';
+import { Router } from './Router';
 
 export function renderGalleryCards(courses: Course[], append: boolean = false) {
   const courseCardsWrap = document.getElementById('galleryCards');
@@ -34,4 +35,5 @@ export function renderGalleryCards(courses: Course[], append: boolean = false) {
       }
     });
   }
+  Router.bindLinks();
 }
