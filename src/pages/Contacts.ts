@@ -88,10 +88,6 @@ export function Contacts() {
         </div>
       </div>
     </div>
-  </section>
-  <section class="best-mentors" >
-  <h2>Our best <span>mentors</span> are ready to help you</h2>
-    <div class="best-mentors__container" id="bestMentors"></div>
   </section>`;
   return contactsPage;
 }

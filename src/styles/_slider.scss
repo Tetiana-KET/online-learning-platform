@@ -21,6 +21,9 @@
   &__slider {
     max-width: 600px;
     height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var.$box-shadow;
 
     @media screen and (width <= 500px) {
       height: 250px;

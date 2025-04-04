@@ -44,6 +44,11 @@ export const Router = {
       history.pushState({ route }, '', route);
     }
 
+    if (route === '#mentors') {
+      scrollToSection(route);
+      return;
+    }
+
     disableCurrentLink(route);
 
     switch (true) {

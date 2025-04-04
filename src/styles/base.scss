@@ -110,3 +110,63 @@ ul li a {
     }
   }
 }
+
+.welcome {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'card1 card1 card2';
+    gap: 20px;
+
+    @media screen and (width <= 978px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'card1';
+    }
+  }
+
+  &__content {
+    height: 100%;
+    padding: 25px 40px 40px;
+    grid-area: card1;
+    border-radius: 15px;
+    background-color: var.$light-grey;
+  }
+
+  &__img-wrap {
+    height: 100%;
+    grid-area: card2;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var.$img-shadow;
+
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (width <= 978px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 28px;
+
+    span {
+      font-style: italic;
+      font-weight: bold;
+      color: var.$accent-color;
+    }
+  }
+
+  &__title {
+    @include mix.title;
+  }
+
+  &__button {
+    display: block;
+    margin-top: 40px;
+
+    @include mix.button-styles(var.$accent-color);
+  }
+}
