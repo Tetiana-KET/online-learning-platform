@@ -30,6 +30,10 @@
   }
 }
 
+@mixin base-button {
+  @extend %base-button;
+}
+
 @mixin button-styles($bg-color) {
   & {
     @extend %base-button;
