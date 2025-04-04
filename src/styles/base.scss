@@ -41,7 +41,8 @@ body {
   overflow-x: hidden;
 }
 
-.no-scroll {
+.no-scroll,
+body.loading {
   overflow: hidden;
 }
 

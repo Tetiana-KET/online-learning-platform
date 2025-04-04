@@ -1,6 +1,12 @@
 @use './mixins.scss' as mix;
 @use './variables.scss' as var;
 
+body.loading {
+  .show-more-btn {
+    display: none;
+  }
+}
+
 .gallery {
   display: flex;
   flex: 1;

@@ -2,7 +2,7 @@
 
 .loader-wrap {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: var.$overlay-bg;
   top: 0;
   left: 0;
@@ -33,7 +33,9 @@
   }
 }
 
-.loader-wrap.loading {
-  z-index: 100;
-  display: flex;
+body.loading {
+  .loader-wrap {
+    z-index: 100;
+    display: flex;
+  }
 }

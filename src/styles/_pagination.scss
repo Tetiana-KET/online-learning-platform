@@ -28,3 +28,9 @@
 .pagination.disabled {
   @include mix.btn-disabled;
 }
+
+body.loading {
+  .pagination {
+    display: none;
+  }
+}

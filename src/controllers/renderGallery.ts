@@ -28,8 +28,13 @@ export function renderGallery() {
   handleCategoryChange(category);
 }
 
-export function loadCourses(page: number = 1, append: boolean, courses: Course[] = filteredCourses) {
+export async function loadCourses(page: number = 1, append: boolean, courses: Course[] = filteredCourses) {
   currentPage = page;
+
+  document.body.classList.add('loading');
+
+  await new Promise((resolve) => setTimeout(resolve, 600)).then(() => document.body.classList.remove('loading'));
+
   const { coursesOnPage, totalPages: newTotalPages } = getPaginatedCourses(page, courses);
   totalPages = newTotalPages;
 
