@@ -13,28 +13,46 @@
   }
 }
 
+%base-button {
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: var.$transition;
+}
+
+%button-hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: var.$box-shadow;
+    }
+  }
+}
+
 @mixin button-styles($bg-color) {
   & {
+    @extend %base-button;
+    @extend %button-hover;
+
     width: 120px;
     padding: 12px;
-    cursor: pointer;
-    border: none;
     border-radius: 5px;
     background-color: $bg-color;
     color: var.$white;
-    transition: var.$transition;
   }
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       background-color: color.adjust($bg-color, $lightness: -5%);
-      box-shadow: var.$box-shadow;
     }
   }
 }
 
 @mixin round-buttons($bg-color: var.$default-bg) {
   & {
+    @extend %base-button;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,8 +62,6 @@
     border: 2px solid var.$accent-color;
     color: var.$accent-color;
     background-color: $bg-color;
-    transition: var.$transition;
-    cursor: pointer;
   }
 
   @media screen and (width <= 550px) {
