@@ -239,15 +239,15 @@ Quality Control
 **Verification**
 Ensure the project is fully functional.
 
-- [ ] Push all changes to the remote repository.
+- [x] Push all changes to the remote repository.
 
-- [ ] Double-check that your last commit is before the project deadline.
+- [x] Double-check that your last commit is before the project deadline.
 
 **Submission**
 
-- [ ] Commit all changes to the repository.
+- [x] Commit all changes to the repository.
 
-- [ ] Submit the repository link before the deadline.
+- [x] Submit the repository link before the deadline.
 
 ## Roadmap
 
