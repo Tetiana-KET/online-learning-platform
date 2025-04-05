@@ -259,6 +259,7 @@ The slider component is designed for smooth navigation through slides, featuring
 
 - Next/Previous Buttons: Navigate slides using left and right arrow buttons.
 - Looping: Automatically wraps around to the first/last slide when reaching the end/start.
+- Swipe is supported on the image slider on mobile devices.
 
 2. Autoplay:
 
@@ -270,10 +271,10 @@ The slider component is designed for smooth navigation through slides, featuring
 - Each slide has an individual progress bar indicating the remaining time before the next slide.
 - Progress bars reset upon manual navigation.
 
-4. Pause on Hover:
+4. Pause on Hover/touch for mobile:
 
-- When hovering over the slider, autoplay and progress indicators pause.
-- On mouse leave, autoplay resumes from where it left off.
+- When hovering over the slider (or touching on mobile devices), autoplay and progress indicators pause.
+- On mouse leave (touchend for mobile), autoplay resumes from where it left off.
 
 5. Responsive Design:
 
@@ -326,4 +327,3 @@ Once the user applies a category filter, they can still sort the filtered items.
 
 - I would make custom select using div, to customize styles, if it won't be considered non semantic.
 - Add the ability to toggle sorting between ascending and descending order.
-- Add possibility to change slides on progress bar click for mobile devices.
