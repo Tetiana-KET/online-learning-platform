@@ -2,9 +2,7 @@
 @use './variables.scss' as var;
 
 .page-wrap {
-  padding: 50px 0;
-
-  & span {
+  span {
     color: var.$accent-color;
     font-style: italic;
     font-weight: bold;
@@ -12,13 +10,14 @@
 }
 
 .contacts {
-  margin-bottom: 50px;
-
   &__container {
     flex-direction: column;
   }
 
   &__title {
+    width: 100%;
+    justify-self: flex-start;
+
     @include mix.title;
   }
 
@@ -29,6 +28,8 @@
 
   &__map {
     flex: 1 1 48%;
+    border-radius: 15px;
+    overflow: hidden;
     box-shadow: var.$box-shadow;
 
     & iframe {
@@ -104,6 +105,10 @@
     flex: 1 1 45%;
     border-radius: 15px;
     overflow: hidden;
+  }
+
+  &__img-wrap {
+    box-shadow: var.$img-shadow;
   }
 
   &__img-wrap img {

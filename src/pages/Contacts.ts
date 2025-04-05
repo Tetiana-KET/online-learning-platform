@@ -3,9 +3,9 @@ export function Contacts() {
   contactsPage.classList.add('page-wrap');
   contactsPage.id = 'contactsPage';
 
-  contactsPage.innerHTML = `<section class="contacts">
+  contactsPage.innerHTML = `<article class="contacts">
     <div class="contacts__container">
-      <h2 class="contacts__title">Our best <span>mentors</span> are ready to help you</h2>
+      <h2 class="contacts__title">We’re <span>Here</span> to Help</h2>
       <div class="contacts__info-wrap">
         <div class="contacts__info info">
           <h4 class="info__title">
@@ -41,7 +41,7 @@ export function Contacts() {
         </div>
       </div>
     </div>
-  </section>
+  </article>
   <section class="about" id="about">
     <div class="about__container">
       <h2 class="about__title">About <span>Us</span></h2>

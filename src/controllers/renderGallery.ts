@@ -8,6 +8,7 @@ import { updatePagination } from '@utils/updatePagination';
 import { NotFound } from '@pages/NotFound';
 import { sortBy } from '@utils/sortBy';
 import { SortByType } from '@models/SortByType';
+import { scrollToTop } from '@utils/scrollToTop';
 
 let currentPage = 1;
 let totalPages = 1;
@@ -17,11 +18,23 @@ let filteredCourses: Course[] = [...sortedCourses];
 
 export function renderGallery() {
   appendNodeToRoot(Gallery(currentPage, totalPages, loadCourses, handleSearch));
-  renderGalleryCards(filteredCourses);
+
+  const path = window.location.pathname;
+  const category = path.split('/')[2]?.replace(/-/g, ' ') || 'select category';
+  const filter = document.getElementById('actionsSelect');
+  if (filter) {
+    (filter as HTMLSelectElement).value = category;
+  }
+  handleCategoryChange(category);
 }
 
-export function loadCourses(page: number = 1, append: boolean, courses: Course[] = filteredCourses) {
+export async function loadCourses(page: number = 1, append: boolean, courses: Course[] = filteredCourses) {
   currentPage = page;
+
+  document.body.classList.add('loading');
+
+  await new Promise((resolve) => setTimeout(resolve, 300)).then(() => document.body.classList.remove('loading'));
+
   const { coursesOnPage, totalPages: newTotalPages } = getPaginatedCourses(page, courses);
   totalPages = newTotalPages;
 
@@ -29,10 +42,7 @@ export function loadCourses(page: number = 1, append: boolean, courses: Course[]
     renderGalleryCards(coursesOnPage, true);
   } else {
     renderGalleryCards(coursesOnPage, false);
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    scrollToTop();
   }
 
   const showMoreButton = document.getElementById('showMoreButton');
@@ -40,10 +50,16 @@ export function loadCourses(page: number = 1, append: boolean, courses: Course[]
     showMoreButton.style.display = currentPage >= totalPages ? 'none' : 'block';
   }
 
-  updatePagination(currentPage, totalPages, loadCourses);
+  if (coursesOnPage.length) {
+    updatePagination(currentPage, totalPages, loadCourses);
+  }
 }
 
 function handleSearch(query: string) {
+  const actionsSelectWrap = document.getElementById('actionsSelectWrap');
+  const sortWrap = document.getElementById('sortWrap');
+  const showMoreButton = document.getElementById('showMoreButton');
+
   filteredCourses = query
     ? courses.filter(
         ({ title, description }) =>
@@ -54,8 +70,18 @@ function handleSearch(query: string) {
   if (!filteredCourses.length) {
     document.getElementById('pagination')?.classList.add('disabled');
     document.getElementById('galleryCards')!.innerHTML = NotFound();
+    actionsSelectWrap?.classList.add('disabled');
+    sortWrap?.classList.add('disabled');
+    if (showMoreButton) {
+      showMoreButton.style.display = 'none';
+    }
   } else {
+    actionsSelectWrap?.classList.remove('disabled');
+    sortWrap?.classList.remove('disabled');
     loadCourses(1, false, filteredCourses);
+    if (showMoreButton) {
+      showMoreButton.style.display = 'block';
+    }
   }
 }
 

@@ -6,6 +6,7 @@ import { SortByType } from '@models/SortByType';
 export function CourseSorter() {
   const sortWrap = document.createElement('div');
   sortWrap.classList.add('actions__sort-wrap');
+  sortWrap.id = 'sortWrap';
   const select = document.createElement('select');
   select.classList.add('actions__sort-items');
 

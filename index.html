@@ -21,23 +21,24 @@
               />
             </a>
           </div>
+          <nav class="header__nav nav">
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a href="/contacts#about" class="nav__link" data-link>About Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="/contacts" class="nav__link" id="contactsLink" data-link>Contacts</a>
+              </li>
+              <li class="nav__item nav__courses-dropdown">
+                <a href="/gallery" class="nav__link" id="galleryLink" data-link>Courses gallery</a>
+                <input type="checkbox" class="dropdown-toggle" id="dropdown-toggler" hidden />
+                <label for="dropdown-toggler"></label>
 
-          <ul class="header__nav nav">
-            <li class="nav__item">
-              <a href="/contacts#about" class="nav__link" data-link>About Us</a>
-            </li>
-            <li class="nav__item">
-              <a href="/contacts" class="nav__link" id="contactsLink" data-link>Contacts</a>
-            </li>
-            <li class="nav__item nav__courses-dropdown">
-              <a href="/gallery" class="nav__link" id="galleryLink" data-link>Courses gallery</a>
-              <input type="checkbox" class="dropdown-toggle" id="dropdown-toggler" hidden />
-              <label for="dropdown-toggler"></label>
-
-              <!-- LIST OF COURSES IS DYNAMICALLY GENERATED -->
-              <ul class="courses" id="courses"></ul>
-            </li>
-          </ul>
+                <!-- LIST OF COURSES IS DYNAMICALLY GENERATED -->
+                <ul class="courses" id="courses"></ul>
+              </li>
+            </ul>
+          </nav>
         </div>
         <button class="header__burger" type="button">
           <span></span>
@@ -88,7 +89,17 @@
         </div>
       </footer>
     </div>
-
+    <button type="button" class="top-button" id="topButton">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.4 122.88">
+        <title>up-arrow</title>
+        <path
+          d="M24.94,67.88A14.66,14.66,0,0,1,4.38,47L47.83,4.21a14.66,14.66,0,0,1,20.56,0L111,46.15A14.66,14.66,0,0,1,90.46,67.06l-18-17.69-.29,59.17c-.1,19.28-29.42,19-29.33-.25L43.14,50,24.94,67.88Z"
+        ></path>
+      </svg>
+    </button>
+    <div class="loader-wrap" id="loader">
+      <div class="loader"></div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

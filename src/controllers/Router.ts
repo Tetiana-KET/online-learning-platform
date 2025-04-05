@@ -11,11 +11,12 @@ export const Router = {
   currentSlider: null as SliderController | null,
 
   init: () => {
-    Router.navigate('/');
+    const currentRoute = window.location.pathname;
+    Router.navigate(currentRoute, false);
     Router.bindLinks();
 
     window.addEventListener('popstate', (e) => {
-      Router.navigate(e.state.route, false);
+      Router.navigate(e.state.route || '/', false);
     });
   },
 
@@ -43,13 +44,18 @@ export const Router = {
       history.pushState({ route }, '', route);
     }
 
+    if (route === '#mentors') {
+      scrollToSection(route);
+      return;
+    }
+
     disableCurrentLink(route);
 
     switch (true) {
       case route === '/':
         renderHome();
         break;
-      case route === '/gallery':
+      case route === '/gallery' || route.startsWith('/gallery/'):
         renderGallery();
         break;
       case route === '/contacts':
@@ -58,8 +64,8 @@ export const Router = {
         scrollToSection(route);
         break;
       case route.startsWith('/course/'):
-        const courseId = route.split('/')[2];
-        renderCourseDetails(courseId);
+        const coursePath = route.split('/')[2];
+        renderCourseDetails(coursePath);
         break;
       default:
         renderNotFound();

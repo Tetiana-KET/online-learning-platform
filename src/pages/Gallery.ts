@@ -32,7 +32,8 @@ export function Gallery(
   showMoreButton.classList.add('show-more-btn');
   showMoreButton.addEventListener('click', () => {
     currentPage++;
-    loadCourses(currentPage, true);
+    loadCourses(currentPage, true); // кнопка тоже же вызывает ту  же функцию, поему при клике на нее не показывается лоадер?
+    //хотя задержка срабатывает
   });
 
   if (currentPage >= totalPages) showMoreButton.style.display = 'none';

@@ -1,20 +1,25 @@
 @use './mixins.scss' as mix;
 @use './variables.scss' as var;
 
+body.loading {
+  .show-more-btn {
+    display: none;
+  }
+}
+
 .gallery {
   display: flex;
   flex: 1;
 
   &__container {
-    max-width: 100%;
-    padding: 25px 0;
+    width: 100%;
     flex-direction: column;
     flex: 1;
 
     .show-more-btn {
-      @include mix.button-styles(var.$accent-color);
+      margin-bottom: 20px;
 
-      margin-bottom: 10px;
+      @include mix.button-styles(var.$accent-color);
     }
   }
 
@@ -24,7 +29,11 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 550px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__card {
@@ -91,8 +100,6 @@
 .course-info__link {
   @include mix.course-link;
 }
-
-// DETAILS PAGE
 
 @media (hover: hover) and (pointer: fine) {
   .course-info__link:hover .ratio-box img {

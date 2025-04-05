@@ -1,4 +1,7 @@
 import { Course } from '@models/Course';
+import { replaceSpaceWithDash } from '@utils/replaceSpaceWithDash';
+import { Button } from './Button';
+import ImageFigure from './ImageFigure';
 
 export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
   const { title, photos, description, id, instructors, difficultyLevel, topics, category } = props;
@@ -6,17 +9,8 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
   galleryCard.classList.add('gallery__card');
 
   // Image Section
-  const figure = document.createElement('figure');
   const imgWrap = document.createElement('div');
-  imgWrap.classList.add('ratio-box');
-
-  const courseImg = document.createElement('img');
-  courseImg.src = photos[0];
-  courseImg.alt = `The image for the course: ${title}`;
-  courseImg.loading = 'lazy';
-
-  imgWrap.append(courseImg);
-  figure.append(imgWrap);
+  const figure = ImageFigure(imgWrap, photos[0], `The image for the course: ${title}`);
 
   // Course Info Section
   const figcaption = document.createElement('figcaption');
@@ -31,10 +25,9 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
   courseInfo.textContent = `${description}`;
 
   // Course Link
-
   const courseLink = document.createElement('a');
   courseLink.classList.add('course-info__link');
-  courseLink.href = `/course/${id}`;
+  courseLink.href = `/course/${replaceSpaceWithDash(title)}_${id}`;
   courseLink.setAttribute('data-link', '');
 
   // Category
@@ -55,26 +48,41 @@ export function GalleryCard(props: Course, isDetailsOpen: boolean = false) {
   // Conditional Details
   if (isDetailsOpen) {
     galleryCard.classList.add('details_open');
+    const detailsAdditional = document.createElement('div');
+    detailsAdditional.classList.add('details__additional');
 
-    // Instructors
-    const instructorsList = document.createElement('ul');
-    instructorsList.classList.add('course-info__instructors');
-    instructors.forEach((instructor) => {
-      const instructorItem = document.createElement('li');
-      instructorItem.textContent = instructor;
-      instructorsList.append(instructorItem);
-    });
+    // image shadow
+    const imgShadow = document.createElement('div');
+    imgShadow.classList.add('img-shadow');
+    imgWrap.append(imgShadow);
 
     // Topics
     const topicsList = document.createElement('ul');
+    topicsList.innerHTML = `<span>Topics:</span>`;
     topicsList.classList.add('course-info__topics');
     topics.forEach((topic) => {
       const topicItem = document.createElement('li');
-      topicItem.textContent = topic;
+      topicItem.textContent = `${topic};`;
       topicsList.append(topicItem);
     });
 
-    figcaption.append(instructorsList, difficulty, topicsList, courseCategory);
+    // Instructors
+    const instructorsList = document.createElement('ul');
+    instructorsList.innerHTML = `<span>Course Mentors:</span>`;
+    instructorsList.classList.add('course-info__instructors');
+    instructors.forEach((instructor) => {
+      const instructorItem = document.createElement('li');
+      instructorItem.textContent = `${instructor};`;
+      instructorsList.append(instructorItem);
+    });
+    figcaption.append(topicsList);
+
+    // Enroll button
+    const buttonWrap = document.createElement('div');
+    buttonWrap.classList.add('enroll-button-wrap');
+    const enrollButton = Button('Enroll', '');
+    figure.after(buttonWrap);
+    buttonWrap.append(enrollButton);
   }
   return galleryCard;
 }

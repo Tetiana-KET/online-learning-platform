@@ -5,9 +5,10 @@
     "instructors": ["John Doe", "Jane Smith"],
     "difficultyLevel": "beginner",
     "topics": ["HTML Basics", "Tags", "Attributes", "Forms"],
-    "photos": ["src/assets/images/teaching3.webp"],
+    "photos": ["/src/assets/images/study1.webp"],
     "category": "Frontend development",
-    "description": "Learn the basics of HTML, the standard markup language for creating web pages."
+    "description": "Learn the basics of HTML, the standard markup language for creating web pages.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "instructors": ["Alice Brown", "Robert Green"],
     "difficultyLevel": "beginner",
     "topics": ["CSS Selectors", "Box Model", "Layout", "Flexbox", "Grid"],
-    "photos": ["src/assets/images/teaching2.webp"],
+    "photos": ["/src/assets/images/teaching2.webp"],
     "category": "Frontend development",
-    "description": "Get a solid foundation in CSS to style your web pages and create responsive layouts."
+    "description": "Get a solid foundation in CSS to style your web pages and create responsive layouts.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 3,
@@ -25,39 +27,43 @@
     "instructors": ["Michael Johnson", "Sarah Williams"],
     "difficultyLevel": "beginner",
     "topics": ["Variables", "Loops", "Functions", "Objects", "Arrays"],
-    "photos": ["src/assets/images/teaching1.webp"],
+    "photos": ["/src/assets/images/javascript.webp"],
     "category": "Frontend development",
-    "description": "Start your JavaScript journey and learn the fundamental concepts of the language."
+    "description": "Start your JavaScript journey and learn the fundamental concepts of the language.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 4,
     "title": "Advanced CSS Techniques",
-    "instructors": ["James Carter", "Olivia Lee"],
+    "instructors": ["Alice Brown", "Robert Green"],
     "difficultyLevel": "intermediate",
     "topics": ["CSS Animations", "Transitions", "Media Queries", "Custom Properties"],
-    "photos": ["src/assets/images/learn-to-code.webp"],
+    "photos": ["/src/assets/images/learn-to-code.webp"],
     "category": "Frontend development",
-    "description": "Master advanced CSS techniques for creating dynamic and responsive web pages."
+    "description": "Master advanced CSS techniques for creating dynamic and responsive web pages.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 5,
     "title": "React.js for Beginners",
-    "instructors": ["Sophia Clark"],
+    "instructors": ["Sophia Clark", "Alice Brown"],
     "difficultyLevel": "beginner",
     "topics": ["React Basics", "Components", "State Management", "Props"],
-    "photos": ["src/assets/images/teaching1.webp"],
+    "photos": ["/src/assets/images/study4.webp"],
     "category": "Frontend development",
-    "description": "Learn the basics of React.js and how to build dynamic user interfaces."
+    "description": "Learn the basics of React.js and how to build dynamic user interfaces.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 6,
     "title": "Node.js Introduction",
-    "instructors": ["Daniel Miller", "Sophia Clark"],
+    "instructors": ["Robert Green", "Sophia Clark"],
     "difficultyLevel": "beginner",
     "topics": ["Node.js Overview", "Event Loop", "Modules", "File System"],
-    "photos": ["src/assets/images/slider4.webp"],
+    "photos": ["/src/assets/images/slider4.webp"],
     "category": "Backend development",
-    "description": "Understand the basics of Node.js and start building server-side applications."
+    "description": "Understand the basics of Node.js and start building server-side applications.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 7,
@@ -65,9 +71,10 @@
     "instructors": ["Liam Davis", "Charlotte Adams"],
     "difficultyLevel": "beginner",
     "topics": ["Express.js Basics", "Routing", "Middleware", "RESTful APIs"],
-    "photos": ["src/assets/images/slider3.webp"],
+    "photos": ["/src/assets/images/express.webp"],
     "category": "Backend development",
-    "description": "Learn how to build RESTful APIs using the Express.js framework."
+    "description": "Learn how to build RESTful APIs using the Express.js framework.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 8,
@@ -75,9 +82,10 @@
     "instructors": ["Lucas Rodriguez", "Mia Evans"],
     "difficultyLevel": "beginner",
     "topics": ["MongoDB Basics", "Collections", "Documents", "Queries"],
-    "photos": ["src/assets/images/slider5.webp"],
+    "photos": ["/src/assets/images/teaching3.webp"],
     "category": "Backend development",
-    "description": "Get started with MongoDB, a NoSQL database, and learn how to interact with it."
+    "description": "Get started with MongoDB, a NoSQL database, and learn how to interact with it.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 9,
@@ -85,19 +93,21 @@
     "instructors": ["Ethan Taylor", "Amelia Thompson"],
     "difficultyLevel": "intermediate",
     "topics": ["Asynchronous Programming", "Streams", "Error Handling", "Authentication"],
-    "photos": ["src/assets/images/slider2.webp"],
+    "photos": ["/src/assets/images/slider2.webp"],
     "category": "Backend development",
-    "description": "Take your Node.js skills to the next level with advanced concepts and best practices."
+    "description": "Take your Node.js skills to the next level with advanced concepts and best practices.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 10,
-    "title": "UI/UX Design Basics",
+    "title": "Web Design Basics",
     "instructors": ["William Harris", "Zoe Scott"],
     "difficultyLevel": "beginner",
-    "topics": ["UI/UX Principles", "Wireframing", "Prototyping", "User Testing"],
-    "photos": ["src/assets/images/slider5.webp"],
-    "category": "UI/UX design",
-    "description": "Learn the essential principles of UI/UX design and how to create user-friendly interfaces."
+    "topics": ["Web Principles", "Wireframing", "Prototyping", "User Testing"],
+    "photos": ["/src/assets/images/slider5.webp"],
+    "category": "Web design",
+    "description": "Learn the essential principles of Web design and how to create user-friendly interfaces.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 11,
@@ -105,9 +115,10 @@
     "instructors": ["Ethan Green", "Sophia Martin"],
     "difficultyLevel": "intermediate",
     "topics": ["Figma Basics", "Design Systems", "Prototyping", "Collaboration"],
-    "photos": ["src/assets/images/slider3.webp"],
-    "category": "UI/UX design",
-    "description": "Master Figma and create stunning designs for web and mobile applications."
+    "photos": ["/src/assets/images/slider3.webp"],
+    "category": "Web design",
+    "description": "Master Figma and create stunning designs for web and mobile applications.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 12,
@@ -115,9 +126,10 @@
     "instructors": ["Olivia Carter", "Mason Mitchell"],
     "difficultyLevel": "beginner",
     "topics": ["Memory Exercises", "Problem-Solving Skills", "Focus Improvement"],
-    "photos": ["src/assets/images/slider1.webp"],
+    "photos": ["/src/assets/images/slider1.webp"],
     "category": "Brain Training",
-    "description": "Enhance your cognitive abilities with exercises designed to improve memory and focus."
+    "description": "Enhance your cognitive abilities with exercises designed to improve memory and focus.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 13,
@@ -125,9 +137,10 @@
     "instructors": ["Lily Lewis", "James Walker"],
     "difficultyLevel": "beginner",
     "topics": ["Active Listening", "Effective Speaking", "Feedback Techniques"],
-    "photos": ["src/assets/images/study5.webp"],
+    "photos": ["/src/assets/images/study5.webp"],
     "category": "Brain Training",
-    "description": "Improve your communication skills and learn how to work better with teams."
+    "description": "Improve your communication skills and learn how to work better with teams.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 14,
@@ -135,9 +148,10 @@
     "instructors": ["Benjamin King", "Chloe Harris"],
     "difficultyLevel": "beginner",
     "topics": ["Basic English Vocabulary", "Technical English", "Workplace Communication"],
-    "photos": ["src/assets/images/engl3.webp"],
+    "photos": ["/src/assets/images/engl3.webp"],
     "category": "English for developers",
-    "description": "Learn English specifically for developers, covering technical terms and workplace communication."
+    "description": "Learn English specifically for developers, covering technical terms and workplace communication.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 15,
@@ -145,39 +159,43 @@
     "instructors": ["Aiden White", "Lily Lee"],
     "difficultyLevel": "intermediate",
     "topics": ["Advanced Vocabulary", "Writing Emails", "Reading Documentation"],
-    "photos": ["src/assets/images/engl2.webp"],
+    "photos": ["/src/assets/images/engl2.webp"],
     "category": "English for developers",
-    "description": "Take your English to the next level with advanced vocabulary and technical writing skills."
+    "description": "Take your English to the next level with advanced vocabulary and technical writing skills.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 16,
     "title": "JavaScript Advanced Concepts",
-    "instructors": ["Christopher Wright", "Sophie Lewis"],
+    "instructors": ["Robert Green", "Michael Johnson"],
     "difficultyLevel": "advanced",
     "topics": ["Closures", "Promises", "Async/Await", "Event Loop"],
-    "photos": ["src/assets/images/coding1.webp"],
+    "photos": ["/src/assets/images/JavaScript1.webp"],
     "category": "Frontend development",
-    "description": "Dive deep into JavaScript with advanced concepts and techniques."
+    "description": "Dive deep into JavaScript with advanced concepts and techniques.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 17,
     "title": "Building REST APIs with Node.js",
-    "instructors": ["Grace Perez", "David Martinez"],
+    "instructors": ["Mia Evans", "Ethan Taylor"],
     "difficultyLevel": "intermediate",
     "topics": ["API Design", "Authentication", "Security", "Versioning"],
-    "photos": ["src/assets/images/coding2.webp"],
+    "photos": ["/src/assets/images/coding2.webp"],
     "category": "Backend development",
-    "description": "Learn how to build secure and efficient REST APIs using Node.js."
+    "description": "Learn how to build secure and efficient REST APIs using Node.js.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 18,
     "title": "UI Design for Mobile Applications",
-    "instructors": ["Jack Scott", "Maya Gonzalez"],
+    "instructors": ["Zoe Scott", "Ethan Green"],
     "difficultyLevel": "intermediate",
     "topics": ["Responsive Design", "Mobile-first", "Gestures", "Navigation"],
-    "photos": ["src/assets/images/study8.webp"],
-    "category": "UI/UX design",
-    "description": "Design beautiful and functional user interfaces for mobile applications."
+    "photos": ["/src/assets/images/study7.webp"],
+    "category": "Web design",
+    "description": "Design beautiful and functional user interfaces for mobile applications.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 19,
@@ -185,29 +203,32 @@
     "instructors": ["Ryan Thomas", "Ella Clark"],
     "difficultyLevel": "intermediate",
     "topics": ["Aggregation Framework", "Indexes", "Replication", "Sharding"],
-    "photos": ["src/assets/images/slider5.webp"],
+    "photos": ["/src/assets/images/mongo2.webp"],
     "category": "Backend development",
-    "description": "Master advanced MongoDB techniques for building scalable and efficient databases."
+    "description": "Master advanced MongoDB techniques for building scalable and efficient databases.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 20,
     "title": "Design Thinking",
-    "instructors": ["Natalie Jackson", "Aaron Green"],
+    "instructors": ["Ethan Green", "Sophia Martin"],
     "difficultyLevel": "intermediate",
     "topics": ["Empathy", "Prototyping", "Iteration", "Testing"],
-    "photos": ["src/assets/images/coding3.webp"],
-    "category": "UI/UX design",
-    "description": "Learn the design thinking methodology for solving complex problems with creative solutions."
+    "photos": ["/src/assets/images/coding3.webp"],
+    "category": "Web design",
+    "description": "Learn the design thinking methodology for solving complex problems with creative solutions.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 21,
     "title": "Learning Git and GitHub",
-    "instructors": ["Zachary Young", "Harper Turner"],
+    "instructors": ["Michael Johnson", "Sarah Williams"],
     "difficultyLevel": "beginner",
     "topics": ["Version Control", "Repositories", "Commits", "Branches"],
-    "photos": ["src/assets/images/coding5.webp"],
+    "photos": ["/src/assets/images/coding5.webp"],
     "category": "Frontend development",
-    "description": "Understand how to use Git and GitHub for version control and collaboration in development."
+    "description": "Understand how to use Git and GitHub for version control and collaboration in development.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 22,
@@ -215,59 +236,65 @@
     "instructors": ["Eleanor Harris", "Oliver Clark"],
     "difficultyLevel": "advanced",
     "topics": ["Sorting Algorithms", "Binary Trees", "Graphs", "Recursion"],
-    "photos": ["src/assets/images/study7.webp"],
+    "photos": ["/src/assets/images/study8.webp"],
     "category": "Brain Training",
-    "description": "Strengthen your problem-solving skills by learning essential algorithms and data structures."
+    "description": "Strengthen your problem-solving skills by learning essential algorithms and data structures.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 23,
     "title": "English for Developers: Level 3",
-    "instructors": ["Avery Smith", "Isabella Lee"],
+    "instructors": ["Chloe Harris", "Aiden White"],
     "difficultyLevel": "advanced",
     "topics": ["Tech Writing", "Conferences", "Presentations", "Job Interviews"],
-    "photos": ["src/assets/images/engl1.webp"],
+    "photos": ["/src/assets/images/engl1.webp"],
     "category": "English for developers",
-    "description": "Master professional English for developers, focusing on writing, presenting, and interviews."
+    "description": "Master professional English for developers, focusing on writing, presenting, and interviews.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 24,
     "title": "English for Developers",
-    "instructors": ["Avery Smith", "Isabella Lee"],
+    "instructors": ["Lily Lee", "Benjamin King"],
     "difficultyLevel": "advanced",
     "topics": ["Tech Writing", "Conferences", "Presentations", "Job Interviews"],
-    "photos": ["src/assets/images/engl4.webp"],
+    "photos": ["/src/assets/images/engl4.webp"],
     "category": "English for developers",
-    "description": "Master professional English  focusing on self-presenting, and interviews."
+    "description": "Master professional English  focusing on self-presenting, and interviews.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 25,
     "title": "Building Full-stack Applications with React and Node.js",
-    "instructors": ["William Adams", "Zoe Fisher"],
+    "instructors": ["John Doe", "Jane Smith"],
     "difficultyLevel": "advanced",
     "topics": ["React", "Node.js", "Express", "MongoDB"],
-    "photos": ["src/assets/images/study1.webp"],
+    "photos": ["/src/assets/images/study1.webp"],
     "category": "Frontend development",
-    "description": "Learn how to build full-stack applications using React for the frontend and Node.js for the backend."
+    "description": "Learn how to build full-stack applications using React for the frontend and Node.js for the backend.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 26,
-    "title": "Advanced UI/UX Design",
-    "instructors": ["Samuel King", "Lily Evans"],
+    "title": "Advanced Web Design",
+    "instructors": ["William Harris", "Zoe Scott"],
     "difficultyLevel": "advanced",
     "topics": ["Design Systems", "User Research", "Usability Testing", "High-fidelity Prototyping"],
-    "photos": ["src/assets/images/study2.webp"],
-    "category": "UI/UX design",
-    "description": "Take your UI/UX design skills to the next level with advanced design techniques and tools."
+    "photos": ["/src/assets/images/study2.webp"],
+    "category": "Web design",
+    "description": "Take your Web design skills to the next level with advanced design techniques and tools.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 27,
     "title": "Basic Mathematics for Developers",
-    "instructors": ["John Smith", "Alice Johnson"],
+    "instructors": ["Emily Wilson", "David Harris"],
     "difficultyLevel": "beginner",
     "topics": ["Algebra", "Geometry", "Statistics", "Problem-solving techniques"],
-    "photos": ["src/assets/images/study10.webp"],
+    "photos": ["/src/assets/images/study10.webp"],
     "category": "Mathematics",
-    "description": "This course introduces the essential mathematical concepts needed for problem-solving in programming. Topics include algebra, basic geometry, and data analysis techniques."
+    "description": "This course introduces the essential mathematical concepts needed for problem-solving in programming. Topics include algebra, basic geometry, and data analysis techniques.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 28,
@@ -275,9 +302,10 @@
     "instructors": ["Mary Lee", "Michael Brown"],
     "difficultyLevel": "beginner",
     "topics": ["Computer hardware", "Operating systems", "Basic software tools", "Internet navigation"],
-    "photos": ["src/assets/images/study9.webp"],
+    "photos": ["/src/assets/images/study9.webp"],
     "category": "Computer Literacy",
-    "description": "Learn how to navigate the world of computers. This course covers computer hardware basics, operating systems, and fundamental software tools to get you started."
+    "description": "Learn how to navigate the world of computers. This course covers computer hardware basics, operating systems, and fundamental software tools to get you started.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 29,
@@ -285,9 +313,10 @@
     "instructors": ["Robert Green", "Sandra White"],
     "difficultyLevel": "advanced",
     "topics": ["Sorting algorithms", "Search algorithms", "Trees", "Graphs", "Dynamic programming"],
-    "photos": ["src/assets/images/study3.webp"],
+    "photos": ["/src/assets/images/study3.webp"],
     "category": "Computer Science",
-    "description": "Dive deep into advanced algorithms and data structures. Topics include sorting, searching, trees, and graphs, aimed at providing a strong foundation for tackling complex problems."
+    "description": "Dive deep into advanced algorithms and data structures. Topics include sorting, searching, trees, and graphs, aimed at providing a strong foundation for tackling complex problems.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   },
   {
     "id": 30,
@@ -295,8 +324,9 @@
     "instructors": ["Emily Wilson", "David Harris"],
     "difficultyLevel": "intermediate",
     "topics": ["Logic", "Set theory", "Combinatorics", "Graph theory", "Number theory"],
-    "photos": ["src/assets/images/study4.webp"],
+    "photos": ["/src/assets/images/teaching1.webp"],
     "category": "Mathematics",
-    "description": "This course provides an introduction to discrete mathematics, a crucial area for understanding algorithms, cryptography, and more. Topics include logic, set theory, combinatorics, and graph theory."
+    "description": "This course provides an introduction to discrete mathematics, a crucial area for understanding algorithms, cryptography, and more. Topics include logic, set theory, combinatorics, and graph theory.",
+    "addInfo": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus iure! Similique inventore assumenda repellendus a amet beatae. Sunt consectetur laudantium esse aut explicabo voluptatibus? Incidunt earum id error obcaecati!"
   }
 ]
