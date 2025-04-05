@@ -1,5 +1,11 @@
 # Online Learning Platform
 
+## [_Merge Request_ - Further Improvements after 31.03 Submission ](https://autocode.git.epam.com/belangelphone/capstone-project-template/-/merge_requests/1)
+
+## **To explore the full functionality of the application, please switch to the develop branch.**
+
+### _The main branch contains only the initial version. All features developed after 31.03 are available in develop branch._
+
 ## Description
 
 An educational platform for users to browse and access various courses. The platform includes dynamic features such as search, sorting, and filtering of courses, as well as a gallery showcasing available courses. It is built with modern web technologies for a responsive, user-friendly experience.
