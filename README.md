@@ -59,7 +59,10 @@ git clone https://autocode.git.epam.com/belangelphone/capstone-project-template
 npm install
 ```
 
-3. Run the development server:
+3. **To explore the full functionality of the application, please switch to the develop branch.**
+   _The main branch contains only the initial version. All features developed after 31/03 are available in develop._
+
+4. Run the development server:
 
 ```
 npm run dev
@@ -325,4 +328,4 @@ Once the user applies a category filter, they can still sort the filtered items.
 
 - I would make custom select using div, to customize styles, if it won't be considered non semantic.
 - Add the ability to toggle sorting between ascending and descending order.
-- Add possibility to change slides on progress bat click for mobile devices.
+- Add slider swipe for mobile devices
