@@ -19,12 +19,12 @@ export function Home() {
         </div>
         <div class="welcome__img-wrap">
           <picture>
-            <source srcset="src/assets/images/school.webp" type="image/webp" />
+            <source srcset="/assets/images/school.webp" type="image/webp" />
             <img
               width="600"
               height="450"
               loading="lazy"
-              src="src/assets/images/default-img.png"
+              src="/assets/images/default-img.png"
               alt="about us section image"
             />
           </picture>
