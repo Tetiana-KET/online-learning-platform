@@ -33,7 +33,8 @@ export function toggleHeaderMenu() {
   document.addEventListener('click', (event) => {
     if (
       (event.target as HTMLElement).closest('.header__nav') ||
-      (event.target as HTMLElement).classList.contains('header__burger-overlay')
+      (event.target as HTMLElement).classList.contains('header__burger-overlay') ||
+      (event.target as HTMLElement).closest('.header__logo-wrap')
     ) {
       closeBurgerMenu();
     }

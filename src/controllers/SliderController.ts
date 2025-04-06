@@ -1,6 +1,7 @@
 import { SLIDES_GAP } from '@consts/SLIDES_GAP';
 import { disableButton } from '@utils/disableButton';
 import { enableButton } from '@utils/enableButton';
+import { getTouchX } from '@utils/getTouchStart';
 
 export class SliderController {
   private slider: HTMLElement;
@@ -14,6 +15,9 @@ export class SliderController {
   private translateX: number = 0;
   private width: number = 0;
   private progressIntervalId: number | undefined;
+  private touchStartX: number | null = null;
+  private touchEndX: number | null = null;
+  private swipeDirection: number | null = null;
 
   constructor(sliderWrapId: string) {
     this.slider = document.getElementById(sliderWrapId)!;
@@ -36,6 +40,8 @@ export class SliderController {
     this.arrowLeft.removeEventListener('click', this.handlePrevSlide);
     this.sliderTrack.removeEventListener('mouseover', this.handleMouseOver);
     this.sliderTrack.removeEventListener('mouseleave', this.handleMouseLeave);
+    this.sliderTrack.addEventListener('touchstart', this.handleTouchStart);
+    this.sliderTrack.addEventListener('touchend', this.handleTouchEnd);
     window.removeEventListener('resize', this.handleResize);
     clearInterval(this.progressIntervalId!);
   }
@@ -45,6 +51,9 @@ export class SliderController {
     this.arrowLeft.addEventListener('click', this.handlePrevSlide);
     this.sliderTrack.addEventListener('mouseover', this.handleMouseOver);
     this.sliderTrack.addEventListener('mouseleave', this.handleMouseLeave);
+    this.sliderTrack.addEventListener('touchstart', this.handleTouchStart);
+    this.sliderTrack.addEventListener('touchend', this.handleTouchEnd);
+
     window.addEventListener('resize', this.handleResize);
 
     this.progressRun();
@@ -70,6 +79,29 @@ export class SliderController {
     if (!this.slider) return;
     this.width = this.slider.clientWidth;
     this.resetProgress();
+  };
+
+  private handleTouchStart = (e: TouchEvent) => {
+    this.touchStartX = getTouchX(e);
+    this.pauseProcess();
+  };
+
+  private handleTouchEnd = (e: TouchEvent) => {
+    this.touchEndX = getTouchX(e);
+
+    if (this.touchStartX && this.touchEndX) {
+      this.swipeDirection = this.touchStartX - this.touchEndX;
+      if (this.swipeDirection > 0) {
+        this.setNextSlide();
+      } else if (this.swipeDirection < 0) {
+        this.setPrevSlide();
+      }
+      this.resetProgress();
+
+      this.touchStartX = null;
+      this.touchEndX = null;
+      this.swipeDirection = null;
+    }
   };
 
   private setActiveDot(dotIndex: number = 0) {

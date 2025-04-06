@@ -10,4 +10,5 @@ export interface Course {
   photos: string[];
   category: Categories;
   description: string;
+  addInfo: string;
 }

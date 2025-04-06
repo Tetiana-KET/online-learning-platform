@@ -1,11 +1,12 @@
 import { SORT_OPTIONS } from '@consts/SORT_OPTIONS';
-import { handleSortChange } from '@controllers/renderGallery';
+import { Router } from '@controllers/Router';
 import { toggleSelectOpen } from '@controllers/toggleSelectOpen';
 import { SortByType } from '@models/SortByType';
 
 export function CourseSorter() {
   const sortWrap = document.createElement('div');
   sortWrap.classList.add('actions__sort-wrap');
+  sortWrap.id = 'sortWrap';
   const select = document.createElement('select');
   select.classList.add('actions__sort-items');
 
@@ -19,7 +20,7 @@ export function CourseSorter() {
 
   select.addEventListener('change', (event) => {
     const sortBy = (event.target as HTMLSelectElement).value as SortByType;
-    handleSortChange(sortBy);
+    Router.galleryController?.handleSortChange(sortBy);
   });
 
   toggleSelectOpen(select);

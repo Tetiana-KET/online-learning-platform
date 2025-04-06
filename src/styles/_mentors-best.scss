@@ -1,0 +1,21 @@
+.best-mentors__container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, auto));
+
+  figure {
+    flex-direction: column;
+  }
+
+  .mentor__card {
+    flex: 1 1 30%;
+  }
+
+  @media screen and (width <= 979px) {
+    grid-template-columns: repeat(2, minmax(280px, auto));
+  }
+
+  @media screen and (width <= 630px) {
+    grid-template-columns: repeat(1, minmax(290px, 500px));
+    justify-content: center;
+  }
+}
