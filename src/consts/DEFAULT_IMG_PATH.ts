@@ -1,1 +1,1 @@
-export const DEFAULT_IMG_PATH = '/src/assets/images/default-img.png';
+export const DEFAULT_IMG_PATH = '/assets/images/default-img.png';
