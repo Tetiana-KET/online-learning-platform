@@ -36,6 +36,11 @@ export const Router = {
   },
 
   navigate: (route: string, addToHistory = true) => {
+    if (route === '#mentors') {
+      scrollToSection(route);
+      return;
+    }
+
     if (Router.currentSlider) {
       Router.currentSlider.destroy();
       Router.currentSlider = null;
@@ -48,11 +53,6 @@ export const Router = {
 
     if (addToHistory) {
       history.pushState({ route }, '', route);
-    }
-
-    if (route === '#mentors') {
-      scrollToSection(route);
-      return;
     }
 
     disableCurrentLink(route);
