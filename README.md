@@ -1,10 +1,6 @@
 # Online Learning Platform
 
-## [_Merge Request_ - Further Improvements after 31.03 Submission ](https://autocode.git.epam.com/belangelphone/capstone-project-template/-/merge_requests/1)
-
-## **To explore the full functionality of the application, please switch to the develop branch.**
-
-### _The main branch contains only the initial version. All features developed after 31.03 are available in develop branch._
+## [Deploy](https://best-online-learning-platform.netlify.app/)
 
 ## Description
 
@@ -331,5 +327,4 @@ Once the user applies a category filter, they can still sort the filtered items.
 
 ## TODO:
 
-- I would make custom select using div, to customize styles, if it won't be considered non semantic.
 - Add the ability to toggle sorting between ascending and descending order.
