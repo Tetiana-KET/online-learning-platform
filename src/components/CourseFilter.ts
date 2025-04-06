@@ -1,5 +1,5 @@
 import { createCourseItems } from '@controllers/createCourseItems';
-import { handleCategoryChange } from '@controllers/renderGallery';
+import { Router } from '@controllers/Router';
 import { toggleSelectOpen } from '@controllers/toggleSelectOpen';
 import { replaceSpaceWithDash } from '@utils/replaceSpaceWithDash';
 
@@ -19,7 +19,7 @@ export function CourseFilter() {
 
   actionsSelect.addEventListener('change', (e) => {
     const selectedCategory = (e.target as HTMLSelectElement).value;
-    handleCategoryChange(selectedCategory);
+    Router.galleryController?.handleCategoryChange(selectedCategory);
     const newUrl = `/gallery/${replaceSpaceWithDash(selectedCategory)}`;
     history.pushState({ route: newUrl }, '', newUrl);
   });

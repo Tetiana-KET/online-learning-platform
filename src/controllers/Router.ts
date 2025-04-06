@@ -1,14 +1,15 @@
 import { disableCurrentLink } from '@utils/disableCurrentLink';
 import { renderContacts } from './renderContacts';
-import { renderGallery } from './renderGallery';
 import { renderHome } from './renderHome';
 import { renderNotFound } from './renderNotFound';
 import { SliderController } from './SliderController';
 import { renderCourseDetails } from './renderCourseDetails';
 import { scrollToSection } from '@utils/scrollToSection';
+import { GalleryController } from './GalleryController';
 
 export const Router = {
   currentSlider: null as SliderController | null,
+  galleryController: null as GalleryController | null,
 
   init: () => {
     const currentRoute = window.location.pathname;
@@ -40,6 +41,11 @@ export const Router = {
       Router.currentSlider = null;
     }
 
+    if (Router.galleryController) {
+      Router.galleryController.destroy();
+      Router.galleryController = null;
+    }
+
     if (addToHistory) {
       history.pushState({ route }, '', route);
     }
@@ -56,7 +62,7 @@ export const Router = {
         renderHome();
         break;
       case route === '/gallery' || route.startsWith('/gallery/'):
-        renderGallery();
+        Router.galleryController = new GalleryController();
         break;
       case route === '/contacts':
       case route === '/contacts#about':
